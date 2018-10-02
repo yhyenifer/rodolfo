@@ -47,7 +47,7 @@ export class DetailTravelPage {
 	}
 
 	agregarMeta() {
-		console.log('agregar meta');
+		console.log('agregar meta aqui');
 		console.log(this.viaje);
 		//this.navCtrl.setRoot(MetasPage);
 		this.presentProfileModal();
