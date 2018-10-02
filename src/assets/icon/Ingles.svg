@@ -1,0 +1,55 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.32" height="18.33" viewBox="0 0 18.32 18.33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #338ec9;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #f14950;
+      }
+
+      .cls-6 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 0.75px;
+      }
+
+      .cls-7 {
+        clip-path: url(#clip-path-2);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="9.16" cy="9.16" r="9.16"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <circle class="cls-1" cx="-9.53" cy="9.16" r="9.16"/>
+    </clipPath>
+  </defs>
+  <title>Aplicacion de viajes final</title>
+  <g class="cls-2">
+    <circle class="cls-3" cx="9.16" cy="9.16" r="9.16"/>
+    <g>
+      <polygon class="cls-4" points="19.37 0.99 17.33 -1.05 9.16 7.12 0.99 -1.05 -1.05 0.99 7.12 9.16 -1.05 17.33 0.99 19.37 9.16 11.2 17.33 19.37 19.37 17.33 11.2 9.16 19.37 0.99"/>
+      <polygon class="cls-5" points="8.45 9.87 -1.2 0.21 -0.5 -0.49 8.45 8.46 20.96 -4.05 21.66 -3.34 8.45 9.87"/>
+      <polygon class="cls-5" points="-2.71 22.37 -3.42 21.67 9.79 8.46 19.45 18.11 18.75 18.82 9.79 9.87 -2.71 22.37"/>
+    </g>
+    <polygon class="cls-6" points="20.63 7.34 10.99 7.34 10.99 -2.3 7.34 -2.3 7.34 7.34 -2.3 7.34 -2.3 10.99 7.34 10.99 7.34 20.63 10.99 20.63 10.99 10.99 20.63 10.99 20.63 7.34"/>
+  </g>
+  <g class="cls-7">
+    <rect class="cls-3" x="-19.85" y="8.42" width="21.89" height="5.14"/>
+    <rect class="cls-5" x="-19.85" y="13.48" width="21.89" height="5.25"/>
+  </g>
+</svg>

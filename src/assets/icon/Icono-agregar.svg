@@ -1,0 +1,22 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="28.346" height="28.346" viewBox="0 0 28.346 28.346">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ebeff3;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #9dbf15;
+      }
+    </style>
+  </defs>
+  <title>Icono-agregar</title>
+  <g>
+    <path class="cls-1" d="M14.173-7.087a21.26,21.26,0,1,1-21.26,21.26,21.27,21.27,0,0,1,21.26-21.26Z"/>
+    <polygon class="cls-2" points="0 11.047 11.047 11.047 11.047 0 17.3 0 17.3 11.047 28.346 11.047 28.346 17.299 17.3 17.299 17.3 28.346 11.047 28.346 11.047 17.299 0 17.299 0 11.047 0 11.047"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="18.649" height="18.649" viewBox="0 0 18.649 18.649">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #374355;
+      }
+    </style>
+  </defs>
+  <title>Menu-agregar</title>
+  <path class="cls-1" d="M18.149,8.824H9.825V.5a.5.5,0,0,0-1,0V8.824H.5a.5.5,0,0,0,0,1H8.825v8.325a.5.5,0,0,0,1,0V9.824h8.324a.5.5,0,0,0,0-1Z"/>
+</svg>

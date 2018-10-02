@@ -1,0 +1,422 @@
+// http://ionicframework.com/docs/theming/
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+//@import "../theme/icons"
+
+// color de los iconos del menu inferior
+//ios
+.tabs-ios .tab-button-icon {
+    color: rgb(45, 61, 76);
+}
+
+// android
+.tabs-md .tab-button-icon {
+    color: rgb(45, 61, 76);
+}
+
+// color de los icono seleccionado
+//ios
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+    color: rgb(34, 118, 175);
+}
+
+//android
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+    color: rgb(34, 118, 175);
+}
+
+// iconos propios de la aplicacion
+ion-icon {
+    &[class*="gl-"] {
+        mask-size: contain;
+        mask-position: 50% 50%;
+        mask-repeat: no-repeat;
+        background: currentColor;
+        width: 1em;
+        height: 1em;
+    }
+
+    &[class*="gl-add"] {
+        mask-image: url(../assets/icon/Menu-agregar.svg);
+        color: rgb(45, 61, 76);
+        font-size: 38px !important;
+    }
+
+    &[class*="gl-config"] {
+        mask-image: url(../assets/icon/Menu-ajustes.svg);
+        color: rgb(45, 61, 76);
+        font-size: 38px !important;
+    }
+
+    &[class*="gl-jorny"] {
+        mask-image: url(../assets/icon/Menu-mis-viajes.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px !important;
+    }
+
+    &[class*="gl-notification"] {
+        mask-image: url(../assets/icon/Menu-Notificaciones.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px !important;
+    }
+
+    &[class*="gl-other-jorny"] {
+        mask-image: url(../assets/icon/Menu-otros-viajes.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px !important;
+    }
+
+    &[class*="gl-map"] {
+        mask-image: url(../assets/icon/Mi-Mapa.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-calendar"] {
+        mask-image: url(../assets/icon/Vista-Calendario.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-buscar"] {
+        mask-image: url(../assets/icon/Buscar.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-facebook"] {
+        mask-image: url(../assets/icon/facebook-icono.svg);
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    &[class*="gl-google"] {
+        mask-image: url(../assets/icon/Google.svg);
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    &[class*="gl-mapa-calendar"] {
+        mask-image: url(../assets/icon/Vista-Mapa-Calendario.svg);
+        color: rgb(45, 61, 76);
+        font-size: 28px;
+    }
+
+    &[class*="gl-lupa"] {
+        mask-image: url(../assets/icon/Lupa.svg);
+        color: rgb(45, 61, 76);
+        font-size: 28px;
+    }
+
+    &[class*="gl-album"] {
+        mask-image: url(../assets/icon/Album.svg);
+        color: rgb(45, 61, 76);
+        font-size: 28px;
+    }
+
+    &[class*="gl-en-progreso"] {
+        mask-image: url(../assets/icon/En-Progreso.svg);
+        color: rgb(45, 61, 76);
+        font-size: 26px;
+    }
+
+    &[class*="gl-opciones"] {
+        mask-image: url(../assets/icon/Opciones.svg);
+        color: rgb(45, 61, 76);
+        font-size: 26px;
+    }
+
+    &[class*="gl-finalizar"] {
+        mask-image: url(../assets/icon/finalizar-mi-viaje.svg);
+        color: rgb(45, 61, 76);
+        font-size: 26px;
+    }
+
+    &[class*="gl-btn-finalizar"] {
+        mask-image: url(../assets/icon/finalizar-mi-viaje.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-btn-compartir"] {
+        mask-image: url(../assets/icon/Compartir-mi-viaje.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-btn-etiquetados"] {
+        mask-image: url(../assets/icon/etiquetados-mi-viaje.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-btn-comentarios"] {
+        mask-image: url(../assets/icon/comentarios-mi-viaje.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-btn-editar"] {
+        mask-image: url(../assets/icon/editar-mi-viaje.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-publico"] {
+        mask-image: url(../assets/icon/Publico.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-privado"] {
+        mask-image: url(../assets/icon/Privado.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-meta"] {
+        mask-image: url(../assets/icon/Meta.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-comentario"] {
+        mask-image: url(../assets/icon/Comentarios.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
+    &[class*="gl-multimedia"] {
+        mask-image: url(../assets/icon/VIdeo-imagen.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+}
+
+.searchbar-md .searchbar-search-icon,
+.searchbar-md .searchbar-md-cancel {
+    display: none;
+}
+
+.searchbar-ios .searchbar-search-icon,
+.searchbar-ios .searchbar-md-cancel {
+    display: none;
+}
+
+.searchbar-input {
+    background: rgb(45, 61, 76) !important;
+}
+
+//android
+.searchbar-md .searchbar-input {
+    background-color: rgb(45, 61, 76);
+    border-radius: 2em;
+    color: white;
+    padding: 6px 18px;
+    width: 100%;
+    height: 35px;
+}
+
+.searchbar-ios.searchbar-left-aligned .searchbar-input {
+    padding-left: 17px;
+}
+
+.searchbar-md .searchbar-input::placeholder {
+    color: white;
+}
+
+.searchbar-ios .searchbar-input::placeholder {
+    color: white;
+}
+
+.searchbar-md .searchbar-input-placeholder {
+    color: white;
+}
+
+.toolbar-background-md {
+    background-color: rgb(233, 233, 233);
+}
+
+.toolbar-background-ios {
+    background-color: rgb(233, 233, 233);
+}
+
+// bara inferior
+.tabs-md .tabbar {
+    background-color: rgb(233, 233, 233);
+}
+
+.tabs-ios .tabbar {
+    background-color: rgb(233, 233, 233);
+}
+
+// barra superior
+.btn_icon {
+    background: #e9e9e9;
+    margin-top: 5px;
+}
+
+.aling_right {
+    text-align: right;
+}
+
+.tamImg {
+    width: 110px;
+}
+
+//botones largos
+.btn_full {
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+}
+
+// colores de fuentes
+.font_black {
+    color: rgb(61, 71, 81);
+}
+
+.font_white {
+    color: white;
+}
+
+.font_green {
+    color: rgb(157, 191, 21);
+}
+
+.fondo_verde {
+    background: rgb(157, 191, 21);
+}
+
+.center {
+    text-align: center;
+}
+
+.txt input::placeholder {
+    color: rgb(45, 61, 76);
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.titleCard {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.fondTitleCard {
+    background: rgb(34, 118, 175);
+}
+
+.card-content-md {
+    padding: 1px 0px;
+    height: 35px;
+}
+
+.card-content-ios {
+    padding: 1px 0px;
+    height: 35px;
+}
+
+.card-md {
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.card-ios {
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.card-header-md {
+    padding: 0px;
+}
+
+.card-header-ios {
+    padding: 0px;
+}
+
+.opcionesCard {
+    position: absolute;
+    text-align: right;
+}
+
+.btn_fondo {
+    background: transparent;
+}
+
+.fondo_gris {
+    background: rgb(231, 236, 242);
+}
+
+.fondo_input {
+    background: rgb(231, 236, 242);
+}
+
+.fondo_superior {
+    background-color: rgb(233, 233, 233);
+}
+
+.paddin_aling {
+    padding: 7px 17px;
+}
+
+.fondoOpaco {
+    background: rgba(231, 236, 242, 0.7);
+}
+
+.borde-abajo-inp {
+    border-bottom: 1px solid rgb(231, 236, 242);
+}
+
+.txtN input::placeholder {
+    color: white;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.color_blanco {
+    color: white;
+}
+
+.text-input-md {
+    color: white;
+}
+
+.item-md.item-input.input-has-focus {
+    border: none;
+}
+
+.input-has-focus textarea {
+    border: none !important;
+}
+
+.item-ios.item-input.input-has-focus {
+    border: none;
+}
+
+.back-button-text-ios {
+    display: none;
+}
+
+.back-button-icon-ios {
+    color: rgb(45, 61, 76);
+}
+
+.fab-close-active .fab-close-icon {
+    color: white;
+    margin: 0 0;
+}

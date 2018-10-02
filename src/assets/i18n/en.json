@@ -1,0 +1,46 @@
+{
+    "Comentario": "variables generales",
+    "BUSCAR": "Search",
+    "SALUDO": "Hello RODOLFO",
+    "NOMBREAPP": "RODOLF",
+    "MENSAJEREQUERIDOCAMP": "es Requerido_in",
+    "MENSAJEREQUERIDACAMP": "es Requerida_in",
+    "EL": "The",
+    "LA": "The",
+    "ACEPTAR": "OK",
+
+    "Comentario": "variables del pantalla inicial",
+    "MSG_IDIOMA": "Idioma seleccionado",
+    "IDIOMA": "English",
+    "LOGINFACEBOOK": "SIGN IN WITH FACEBOOK",
+    "LOGINGOOGLE": "SIGN IN WITH GOOGLE",
+    "LOGIN": "SIGN IN",
+    "CREARCUENTA": "SIGN UP",
+    "POLITICA": "Al continuar aceptas nuestra _ in",
+    "POLITICAUSE": "Política de Uso _ in",
+
+    "Comentario": "variables del login",
+    "MSG_LOGIN": "Inicio de Sesión _ in",
+    "CORREO": "Correo Electrónico_in",
+    "CONTRASENA": "Contraseña_in",
+
+    "Comentario": "variables de nuevo viaje",
+    "TITULOVIAJE": "Título del Viaje_in",
+    "CREARVIAJE": "CREAR MI VIAJE_in",
+    "SELECCIONDESTINO": "Selecciona tu destino_in",
+    "PUBLICO": "Publico_in",
+    "PRIVADO": "Privado_in",
+    "PLACER": "Placer_in",
+    "NEGOCIOS": "Negocios_in",
+    "FECHA": "Date",
+    "COMENTARIOVIAJE": "Agrega un comentario para este viaje_in",
+    "QUIENVIAJACONTIGO": "¿Quién viaja contigo?",
+    "MENSAJECREACIONEXITO": "El viaje se ha creado exitosamente_in"
+
+
+
+
+
+
+
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.892" height="18.725" viewBox="0 0 21.892 18.725">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #f2f23d;
+      }
+
+      .cls-4 {
+        fill: #338ec9;
+      }
+
+      .cls-5 {
+        fill: #f14950;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="10.319" cy="9.163" r="9.163"/>
+    </clipPath>
+  </defs>
+  <title>Recurso 6</title>
+  <g id="Capa_2" data-name="Capa 2">
+    <g id="Capa_1-2" data-name="Capa 1">
+      <g class="cls-2">
+        <circle class="cls-3" cx="10.319" cy="9.163" r="9.163"/>
+        <rect class="cls-4" y="8.417" width="21.892" height="5.141"/>
+        <rect class="cls-5" y="13.475" width="21.892" height="5.25"/>
+      </g>
+    </g>
+  </g>
+</svg>
