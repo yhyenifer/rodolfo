@@ -1,0 +1,59 @@
+<!--
+  Generated template for the SingInPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="encabezado"
+            mode="md">
+
+    <ion-navbar>
+        <ion-buttons end>
+            <button ion-button
+                    (click)="closeModal()">
+                <ion-icon name="close"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding
+             class="fondonInicio">
+    <ion-row class="tamaño_logo">
+        <ion-col class="center margen_arriba">
+            <h1 class="font_green"> {{'MSG_LOGIN' | translate}}</h1>
+        </ion-col>
+    </ion-row>
+
+    <ion-item class="fondo_input borde txt">
+
+        <ion-input placeholder="{{'CORREO' | translate}}"></ion-input>
+    </ion-item>
+
+    <ion-item id="pass"
+              class="fondo_input borde txt">
+        <ion-input placeholder="{{'CONTRASENA' | translate}}"
+                   type="password"></ion-input>
+    </ion-item>
+
+
+    <ion-row>
+        <button ion-button
+                id="btn_login"
+                color="app_btn_login"
+                class="btn_full font_white ">
+            {{'LOGIN' | translate}}
+        </button>
+
+    </ion-row>
+    <ion-row>
+        <ion-col class="center">
+            <p class="font_white">{{'POLITICA' | translate}} <a class="font_white"
+                   href="https://gatolocostudios.com/">{{'POLITICAUSE' | translate}}</a></p>
+
+        </ion-col>
+    </ion-row>
+
+</ion-content>

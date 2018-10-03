@@ -1,0 +1,63 @@
+page-sing-in {
+    .fondonInicio {
+        background: url('../assets/imgs/fondos/inicio.png');
+        background-position: center;
+    }
+
+    .toolbar toolbar-md {
+        min-height: 36px;
+    }
+
+    .toolbar-background-md {
+        background-color: transparent;
+    }
+
+    .toolbar-background-ios {
+        background-color: transparent;
+    }
+
+    // icono del cerrar
+    .bar-button-default-md,
+    .bar-button-clear-md-default,
+    .bar-button-md-default {
+        color: white;
+        font-size: 40px;
+    }
+
+    // icono del cerrar
+    .bar-button-default-ios,
+    .bar-button-clear-md-default,
+    .bar-button-ios-default {
+        color: white;
+        font-size: 40px;
+    }
+
+    .header-md::after {
+        background-image: none;
+    }
+
+
+
+    .tamaño_logo {
+        // margin-bottom: 155px;
+        margin: 86px 0;
+    }
+
+
+
+
+
+    .borde {
+        border-radius: 5px;
+    }
+
+
+    #pass {
+        margin: 10px 0;
+
+    }
+
+    #btn_login {
+        margin: 65px 0;
+    }
+}

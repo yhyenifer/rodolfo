@@ -1,0 +1,67 @@
+<!--
+  Generated template for the DetailTravelPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-row>
+
+            <ion-col col-8>
+                <ion-label class="fontTitle">{{nombreViaje}}</ion-label>
+            </ion-col>
+            <ion-col col-4
+                     class="aling_right ">
+                <button class="btn_icon">
+                    <ion-icon class="tamaño"
+                              name="gl-btn-editar"></ion-icon>
+                </button>
+                <button class="btn_icon ">
+                    <ion-icon class="tamaño"
+                              name="gl-btn-finalizar"></ion-icon>
+                </button>
+            </ion-col>
+
+        </ion-row>
+
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding
+             class="fondoDetailTravels">
+
+    <ion-fab bottom
+             right
+             class="animated pulse"
+             [ngClass]="efecto"
+             (click)="agregar()">
+        <button ion-fab
+                class="fondo_verde">
+            <!-- <ion-icon name="add"></ion-icon> -->
+            <img class="tam_icon"
+                 src="assets/icon/Agregar-contenido_Agregar contenido.svg">
+        </button>
+        <ion-fab-list side="top">
+            <button ion-fab>
+                <ion-icon class="fondo_gris"
+                          name="gl-multimedia"></ion-icon>
+            </button>
+            <button ion-fab>
+                <ion-icon class="fondo_gris"
+                          name="gl-comentario"></ion-icon>
+            </button>
+            <button ion-fab
+                    (click)="agregarMeta()">
+                <ion-icon class="fondo_gris"
+                          name="gl-meta"></ion-icon>
+            </button>
+
+        </ion-fab-list>
+    </ion-fab>
+
+
+</ion-content>

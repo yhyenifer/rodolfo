@@ -1,0 +1,916 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../assets/fonts/icomoon.eot?vjmpi9');
+    src: url('../assets/fonts/icomoon.eot?vjmpi9#iefix') format('embedded-opentype'),
+        url('../assets/fonts/icomoon.ttf?vjmpi9') format('truetype'),
+        url('../assets/fonts/icomoon.woff?vjmpi9') format('woff'),
+        url('../assets/fonts/icomoon.svg?vjmpi9#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class^="ion-ios-icon"],
+[class*="ion-ios-icon"],
+[class^="ion-md-icon"],
+[class*="ion-md-icon"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin makeIcon($arg, $val) {
+
+    .#{$arg}:before,
+    .ion-ios-icon-#{$arg}:before,
+    .ion-ios-icon-#{$arg}-outline:before,
+    .ion-md-icon-#{$arg}:before,
+    .ion-md-icon-#{$arg}-outline:before {
+        content: $val;
+        font-size: 26px;
+
+    }
+}
+
+
+
+
+//Adding Icons
+
+// @mixin makeIconColor($arg, $val, $col) {
+
+//     .#{$arg}:before,
+//     .ion-ios-icon-#{$arg}:before,
+//     .ion-ios-icon-#{$arg}-outline:before,
+//     .ion-md-icon-#{$arg}:before,
+//     .ion-md-icon-#{$arg}-outline:before {
+//         content: $val;
+//         font-size: 26px;
+//         color: $col
+//     }
+// }
+
+//@include makeIconColor(Aburrido, '\e900', 'rgb(255, 119, 51)');
+
+.icon-Aburrido .path1:before {
+    content: "\e900";
+    color: rgb(255, 119, 51);
+}
+
+//@include makeIconColor(Agregar-completo, '\e90b', 'rgb(235, 239, 243)');
+
+// .icon-Agregar-completo .path1:before {
+//     content: "\e905";
+//     color: rgb(235, 239, 243);
+// }
+
+// .icon-Aburrido .path2:before {
+//     content: "\e901";
+//     margin-left: -1em;
+//     color: rgb(255, 255, 255);
+//     opacity: 0.1;
+// }
+
+// .icon-Aburrido .path3:before {
+//     content: "\e902";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// .icon-Aburrido .path4:before {
+//     content: "\e903";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// .icon-Aburrido .path5:before {
+//     content: "\e904";
+//     margin-left: -1em;
+//     color: none;
+// }
+
+
+
+// .icon-Agregar-completo .path2:before {
+//     content: "\e906";
+//     margin-left: -1em;
+//     color: rgb(157, 191, 21);
+// }
+
+// .icon-Agregar-meta:before {
+//     content: "\e907";
+//     color: #fff;
+// }
+
+// .icon-Anexar-foto:before {
+//     content: "\e908";
+//     color: #fff;
+// }
+
+// .icon-atras:before {
+//     content: "\e909";
+//     color: #3d4751;
+// }
+
+// .icon-Ayuda:before {
+//     content: "\e90a";
+//     color: #9dbf15;
+// }
+
+@include makeIcon(Camara, '\e90b');
+
+@include makeIcon(comentarios-mi-viaje, '\e90c');
+
+// .icon-Comentarios-otro-viaje:before {
+//     content: "\e90d";
+//     color: #eff4fa;
+// }
+
+@include makeIcon(comentarios-publicacion, '\e90e');
+
+// .icon-Comentarios:before {
+//     content: "\e90f";
+//     color: #374355;
+// }
+
+@include makeIcon(Compartir-mi-viaje, '\e910');
+
+// .icon-compartir-otro-viaje:before {
+//     content: "\e911";
+//     color: #eff4fa;
+// }
+
+@include makeIcon(Compartir-publicacion, '\e912');
+
+@include makeIcon(editar-Comentario, '\e913');
+
+@include makeIcon(editar-mi-viaje, '\e914');
+
+@include makeIcon(Editar-publicacion, '\e915');
+
+@include makeIcon(Eliminar-Comentario, '\e916');
+
+// .icon-Eliminar-crear-viaje .path1:before {
+//     content: "\e917";
+//     color: rgb(55, 67, 85);
+// }
+
+// .icon-Eliminar-crear-viaje .path2:before {
+//     content: "\e918";
+//     margin-left: -1.0380859375em;
+//     color: rgb(255, 255, 255);
+// }
+
+// .icon-Eliminar-crear-viaje .path3:before {
+//     content: "\e919";
+//     margin-left: -1.0380859375em;
+//     color: rgb(255, 255, 255);
+// }
+
+// .icon-eliminar-meta:before {
+//     content: "\e91a";
+//     color: #fff;
+// }
+
+// @include makeIcon(En-Progreso, '\e91b');
+
+// .icon-Estupendo .path1:before {
+//     content: "\e91c";
+//     color: rgb(35, 168, 7);
+// }
+
+// .icon-Estupendo .path2:before {
+//     content: "\e91d";
+//     margin-left: -1em;
+//     color: rgb(255, 255, 255);
+//     opacity: 0.1;
+// }
+
+// .icon-Estupendo .path3:before {
+//     content: "\e91e";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// .icon-Estupendo .path4:before {
+//     content: "\e91f";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// .icon-Estupendo .path5:before {
+//     content: "\e920";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// @include makeIcon(etiquetados-mi-viaje, '\e921');
+
+// .icon-etiquetas-otro-viaje:before {
+//     content: "\e922";
+//     color: #eff4fa;
+// }
+
+@include makeIcon(Etiquetas-publicacion, '\e923');
+
+// .icon-facebook-icono:before {
+//     content: "\e924";
+//     color: #fff;
+// }
+
+// .icon-Feliz .path1:before {
+//     content: "\e925";
+//     color: rgb(132, 214, 26);
+// }
+
+// .icon-Feliz .path2:before {
+//     content: "\e926";
+//     margin-left: -1em;
+//     color: rgb(255, 255, 255);
+//     opacity: 0.1;
+// }
+
+// .icon-Feliz .path3:before {
+//     content: "\e927";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// .icon-Feliz .path4:before {
+//     content: "\e928";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// .icon-Feliz .path5:before {
+//     content: "\e929";
+//     margin-left: -1em;
+//     color: none;
+// }
+
+// .icon-Finalizar-meta:before {
+//     content: "\e92a";
+//     color: #fcfdff;
+// }
+
+@include makeIcon(finalizar-mi-viaje, '\e92b');
+
+@include makeIcon(Galeria, '\e92c');
+
+// .icon-Google-icono:before {
+//     content: "\e92d";
+//     color: #fff;
+// }
+
+// .icon-Icon-map:before {
+//     content: "\e92e";
+//     color: #ff3b30;
+// }
+
+// .icon-Icono-agregar .path1:before {
+//     content: "\e92f";
+//     color: rgb(235, 239, 243);
+// }
+
+// .icon-Icono-agregar .path2:before {
+//     content: "\e930";
+//     margin-left: -1em;
+//     color: rgb(157, 191, 21);
+// }
+
+@include makeIcon(Icono-editar-superior, '\e931');
+
+@include makeIcon(Icono-finalizar-viaje-superior, '\e932');
+
+// .icon-Logro1 .path1:before {
+//     content: "\e933";
+//     color: rgb(240, 202, 48);
+// }
+
+// .icon-Logro1 .path2:before {
+//     content: "\e934";
+//     margin-left: -1em;
+//     color: rgb(236, 190, 49);
+// }
+
+// .icon-Logro1 .path3:before {
+//     content: "\e935";
+//     margin-left: -1em;
+//     color: rgb(236, 190, 49);
+// }
+
+// .icon-Logro1 .path4:before {
+//     content: "\e936";
+//     margin-left: -1em;
+//     color: rgb(230, 175, 65);
+// }
+
+// .icon-Logro1 .path5:before {
+//     content: "\e937";
+//     margin-left: -1em;
+//     color: rgb(230, 175, 65);
+// }
+
+// .icon-Logro1 .path6:before {
+//     content: "\e938";
+//     margin-left: -1em;
+//     color: rgb(243, 212, 71);
+// }
+
+// .icon-Logro1 .path7:before {
+//     content: "\e939";
+//     margin-left: -1em;
+//     color: rgb(244, 221, 125);
+// }
+
+// .icon-Logro1 .path8:before {
+//     content: "\e93a";
+//     margin-left: -1em;
+//     color: rgb(230, 175, 65);
+// }
+
+// .icon-Logro2 .path1:before {
+//     content: "\e93b";
+//     color: rgb(243, 212, 71);
+// }
+
+// .icon-Logro2 .path2:before {
+//     content: "\e93c";
+//     margin-left: -0.8779296875em;
+//     color: rgb(236, 190, 49);
+// }
+
+// .icon-Logro2 .path3:before {
+//     content: "\e93d";
+//     margin-left: -0.8779296875em;
+//     color: rgb(240, 202, 48);
+// }
+
+// .icon-Logro2 .path4:before {
+//     content: "\e93e";
+//     margin-left: -0.8779296875em;
+//     color: rgb(230, 175, 65);
+// }
+
+// .icon-Logro2 .path5:before {
+//     content: "\e93f";
+//     margin-left: -0.8779296875em;
+//     color: rgb(230, 175, 65);
+// }
+
+// .icon-Logro2 .path6:before {
+//     content: "\e940";
+//     margin-left: -0.8779296875em;
+//     color: rgb(244, 221, 125);
+// }
+
+// .icon-Logro2 .path7:before {
+//     content: "\e941";
+//     margin-left: -0.8779296875em;
+//     color: rgb(244, 221, 125);
+// }
+
+// .icon-Logro2 .path8:before {
+//     content: "\e942";
+//     margin-left: -0.8779296875em;
+//     color: rgb(244, 221, 125);
+// }
+
+// .icon-Logro2 .path9:before {
+//     content: "\e943";
+//     margin-left: -0.8779296875em;
+//     color: rgb(244, 221, 125);
+// }
+
+// .icon-Logro2 .path10:before {
+//     content: "\e944";
+//     margin-left: -0.8779296875em;
+//     color: rgb(244, 221, 125);
+// }
+
+// .icon-Logro2 .path11:before {
+//     content: "\e945";
+//     margin-left: -0.8779296875em;
+//     color: rgb(244, 221, 125);
+// }
+
+// .icon-Logro2 .path12:before {
+//     content: "\e946";
+//     margin-left: -0.8779296875em;
+//     color: rgb(244, 221, 125);
+// }
+
+// .icon-Mal .path1:before {
+//     content: "\e947";
+//     color: rgb(255, 59, 48);
+// }
+
+// .icon-Mal .path2:before {
+//     content: "\e948";
+//     margin-left: -1em;
+//     color: rgb(255, 255, 255);
+//     opacity: 0.1;
+// }
+
+// .icon-Mal .path3:before {
+//     content: "\e949";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// .icon-Mal .path4:before {
+//     content: "\e94a";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// .icon-Mal .path5:before {
+//     content: "\e94b";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// .icon-Menu-agregar:before {
+//     content: "\e94c";
+//     color: #374355;
+// }
+
+// .icon-Menu-ajustes:before {
+//     content: "\e94d";
+//     color: #374355;
+// }
+
+// .icon-Menu-mis-viajes:before {
+//     content: "\e94e";
+//     color: #374355;
+// }
+
+// .icon-Menu-Notificaciones:before {
+//     content: "\e94f";
+//     color: #374355;
+// }
+
+// .icon-Menu-otros-viajes:before {
+//     content: "\e950";
+//     color: #374355;
+// }
+
+// .icon-Metas:before {
+//     content: "\e951";
+//     color: #374355;
+// }
+
+@include makeIcon(Mi-Mapa, '\e952');
+
+// .icon-Nivel-icono-pequeo .path1:before {
+//     content: "\e953";
+//     color: rgb(199, 214, 110);
+// }
+
+// .icon-Nivel-icono-pequeo .path2:before {
+//     content: "\e954";
+//     margin-left: -0.6474609375em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-icono-pequeo .path3:before {
+//     content: "\e955";
+//     margin-left: -0.6474609375em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-icono-pequeo .path4:before {
+//     content: "\e956";
+//     margin-left: -0.6474609375em;
+//     color: rgb(45, 61, 76);
+// }
+
+// .icon-Nivel-icono-pequeo .path5:before {
+//     content: "\e957";
+//     margin-left: -0.6474609375em;
+//     color: rgb(25, 39, 51);
+// }
+
+// .icon-Nivel-icono-pequeo .path6:before {
+//     content: "\e958";
+//     margin-left: -0.6474609375em;
+//     color: rgb(234, 184, 148);
+// }
+
+// .icon-Nivel-icono-pequeo .path7:before {
+//     content: "\e959";
+//     margin-left: -0.6474609375em;
+//     color: rgb(255, 222, 192);
+// }
+
+// .icon-Nivel-icono-pequeo .path8:before {
+//     content: "\e95a";
+//     margin-left: -0.6474609375em;
+//     color: rgb(234, 184, 148);
+// }
+
+// .icon-Nivel-icono-pequeo .path9:before {
+//     content: "\e95b";
+//     margin-left: -0.6474609375em;
+//     color: rgb(255, 222, 192);
+// }
+
+// .icon-Nivel-icono-pequeo .path10:before {
+//     content: "\e95c";
+//     margin-left: -0.6474609375em;
+//     color: rgb(255, 222, 192);
+// }
+
+// .icon-Nivel-icono-pequeo .path11:before {
+//     content: "\e95d";
+//     margin-left: -0.6474609375em;
+//     color: rgb(28, 146, 211);
+// }
+
+// .icon-Nivel-icono-pequeo .path12:before {
+//     content: "\e95e";
+//     margin-left: -0.6474609375em;
+//     color: rgb(28, 146, 211);
+// }
+
+// .icon-Nivel-icono-pequeo .path13:before {
+//     content: "\e95f";
+//     margin-left: -0.6474609375em;
+//     color: rgb(34, 34, 34);
+// }
+
+// .icon-Nivel-icono-pequeo .path14:before {
+//     content: "\e960";
+//     margin-left: -0.6474609375em;
+//     color: rgb(34, 34, 34);
+// }
+
+// .icon-Nivel-icono-pequeo .path15:before {
+//     content: "\e961";
+//     margin-left: -0.6474609375em;
+//     color: rgb(255, 255, 255);
+// }
+
+// .icon-Nivel-icono-pequeo .path16:before {
+//     content: "\e962";
+//     margin-left: -0.6474609375em;
+//     color: rgb(255, 59, 48);
+// }
+
+// .icon-Nivel-icono-pequeo .path17:before {
+//     content: "\e963";
+//     margin-left: -0.6474609375em;
+//     color: rgb(35, 35, 35);
+// }
+
+// .icon-Nivel-icono-pequeo .path18:before {
+//     content: "\e964";
+//     margin-left: -0.6474609375em;
+//     color: rgb(255, 222, 192);
+// }
+
+// .icon-Nivel-icono-pequeo .path19:before {
+//     content: "\e965";
+//     margin-left: -0.6474609375em;
+//     color: rgb(255, 222, 192);
+// }
+
+// .icon-Nivel-icono-pequeo .path20:before {
+//     content: "\e966";
+//     margin-left: -0.6474609375em;
+//     color: rgb(28, 146, 211);
+// }
+
+// .icon-Nivel-icono-pequeo .path21:before {
+//     content: "\e967";
+//     margin-left: -0.6474609375em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-icono-pequeo .path22:before {
+//     content: "\e968";
+//     margin-left: -0.6474609375em;
+//     color: rgb(61, 148, 157);
+// }
+
+// .icon-Nivel-icono-pequeo .path23:before {
+//     content: "\e969";
+//     margin-left: -0.6474609375em;
+//     color: rgb(61, 148, 157);
+// }
+
+// .icon-Nivel-icono-pequeo .path24:before {
+//     content: "\e96a";
+//     margin-left: -0.6474609375em;
+//     color: rgb(23, 117, 122);
+// }
+
+// .icon-Nivel-icono-pequeo .path25:before {
+//     content: "\e96b";
+//     margin-left: -0.6474609375em;
+//     color: rgb(23, 117, 122);
+// }
+
+// .icon-Nivel-icono-pequeo .path26:before {
+//     content: "\e96c";
+//     margin-left: -0.6474609375em;
+//     color: rgb(23, 117, 122);
+// }
+
+// .icon-Nivel-icono-pequeo .path27:before {
+//     content: "\e96d";
+//     margin-left: -0.6474609375em;
+//     color: rgb(23, 117, 122);
+// }
+
+// .icon-Nivel-icono-pequeo .path28:before {
+//     content: "\e96e";
+//     margin-left: -0.6474609375em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-icono-pequeo .path29:before {
+//     content: "\e96f";
+//     margin-left: -0.6474609375em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-icono-pequeo .path30:before {
+//     content: "\e970";
+//     margin-left: -0.6474609375em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-icono-pequeo .path31:before {
+//     content: "\e971";
+//     margin-left: -0.6474609375em;
+//     color: rgb(45, 61, 76);
+// }
+
+// .icon-Nivel-icono-pequeo .path32:before {
+//     content: "\e972";
+//     margin-left: -0.6474609375em;
+//     color: rgb(45, 61, 76);
+// }
+
+// .icon-Nivel-principiante .path1:before {
+//     content: "\e973";
+//     color: rgb(0, 0, 0);
+//     opacity: 0.0800;
+// }
+
+// .icon-Nivel-principiante .path2:before {
+//     content: "\e974";
+//     margin-left: -0.8251953125em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-principiante .path3:before {
+//     content: "\e975";
+//     margin-left: -0.8251953125em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-principiante .path4:before {
+//     content: "\e976";
+//     margin-left: -0.8251953125em;
+//     color: rgb(45, 61, 76);
+// }
+
+// .icon-Nivel-principiante .path5:before {
+//     content: "\e977";
+//     margin-left: -0.8251953125em;
+//     color: rgb(25, 39, 51);
+// }
+
+// .icon-Nivel-principiante .path6:before {
+//     content: "\e978";
+//     margin-left: -0.8251953125em;
+//     color: rgb(234, 184, 148);
+// }
+
+// .icon-Nivel-principiante .path7:before {
+//     content: "\e979";
+//     margin-left: -0.8251953125em;
+//     color: rgb(255, 222, 192);
+// }
+
+// .icon-Nivel-principiante .path8:before {
+//     content: "\e97a";
+//     margin-left: -0.8251953125em;
+//     color: rgb(234, 184, 148);
+// }
+
+// .icon-Nivel-principiante .path9:before {
+//     content: "\e97b";
+//     margin-left: -0.8251953125em;
+//     color: rgb(255, 222, 192);
+// }
+
+// .icon-Nivel-principiante .path10:before {
+//     content: "\e97c";
+//     margin-left: -0.8251953125em;
+//     color: rgb(255, 222, 192);
+// }
+
+// .icon-Nivel-principiante .path11:before {
+//     content: "\e97d";
+//     margin-left: -0.8251953125em;
+//     color: rgb(28, 146, 211);
+// }
+
+// .icon-Nivel-principiante .path12:before {
+//     content: "\e97e";
+//     margin-left: -0.8251953125em;
+//     color: rgb(28, 146, 211);
+// }
+
+// .icon-Nivel-principiante .path13:before {
+//     content: "\e97f";
+//     margin-left: -0.8251953125em;
+//     color: rgb(255, 255, 255);
+// }
+
+// .icon-Nivel-principiante .path14:before {
+//     content: "\e980";
+//     margin-left: -0.8251953125em;
+//     color: rgb(255, 59, 48);
+// }
+
+// .icon-Nivel-principiante .path15:before {
+//     content: "\e981";
+//     margin-left: -0.8251953125em;
+//     color: rgb(35, 35, 35);
+// }
+
+// .icon-Nivel-principiante .path16:before {
+//     content: "\e982";
+//     margin-left: -0.8251953125em;
+//     color: rgb(255, 222, 192);
+// }
+
+// .icon-Nivel-principiante .path17:before {
+//     content: "\e983";
+//     margin-left: -0.8251953125em;
+//     color: rgb(255, 222, 192);
+// }
+
+// .icon-Nivel-principiante .path18:before {
+//     content: "\e984";
+//     margin-left: -0.8251953125em;
+//     color: rgb(28, 146, 211);
+// }
+
+// .icon-Nivel-principiante .path19:before {
+//     content: "\e985";
+//     margin-left: -0.8251953125em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-principiante .path20:before {
+//     content: "\e986";
+//     margin-left: -0.8251953125em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-principiante .path21:before {
+//     content: "\e987";
+//     margin-left: -0.8251953125em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-principiante .path22:before {
+//     content: "\e988";
+//     margin-left: -0.8251953125em;
+//     color: rgb(61, 148, 157);
+// }
+
+// .icon-Nivel-principiante .path23:before {
+//     content: "\e989";
+//     margin-left: -0.8251953125em;
+//     color: rgb(61, 148, 157);
+// }
+
+// .icon-Nivel-principiante .path24:before {
+//     content: "\e98a";
+//     margin-left: -0.8251953125em;
+//     color: rgb(23, 117, 122);
+// }
+
+// .icon-Nivel-principiante .path25:before {
+//     content: "\e98b";
+//     margin-left: -0.8251953125em;
+//     color: rgb(23, 117, 122);
+// }
+
+// .icon-Nivel-principiante .path26:before {
+//     content: "\e98c";
+//     margin-left: -0.8251953125em;
+//     color: rgb(23, 117, 122);
+// }
+
+// .icon-Nivel-principiante .path27:before {
+//     content: "\e98d";
+//     margin-left: -0.8251953125em;
+//     color: rgb(23, 117, 122);
+// }
+
+// .icon-Nivel-principiante .path28:before {
+//     content: "\e98e";
+//     margin-left: -0.8251953125em;
+//     color: rgb(23, 95, 103);
+// }
+
+// .icon-Nivel-principiante .path29:before {
+//     content: "\e98f";
+//     margin-left: -0.8251953125em;
+//     color: rgb(45, 61, 76);
+// }
+
+// .icon-Nivel-principiante .path30:before {
+//     content: "\e990";
+//     margin-left: -0.8251953125em;
+//     color: rgb(45, 61, 76);
+// }
+
+// .icon-Nivel-principiante .path31:before {
+//     content: "\e991";
+//     margin-left: -0.8251953125em;
+//     color: rgb(199, 214, 110);
+// }
+
+// .icon-Normal .path1:before {
+//     content: "\e992";
+//     color: rgb(255, 197, 51);
+// }
+
+// .icon-Normal .path2:before {
+//     content: "\e993";
+//     margin-left: -1em;
+//     color: rgb(255, 255, 255);
+//     opacity: 0.1;
+// }
+
+// .icon-Normal .path3:before {
+//     content: "\e994";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// .icon-Normal .path4:before {
+//     content: "\e995";
+//     margin-left: -1em;
+//     color: rgb(255, 253, 253);
+// }
+
+// .icon-Normal .path5:before {
+//     content: "\e996";
+//     margin-left: -1em;
+//     color: none;
+// }
+
+// .icon-notificacion-bienvenida:before {
+//     content: "\e997";
+//     color: #2276af;
+// }
+
+@include makeIcon(notificacion-tips, '\e998');
+
+@include makeIcon(Notificaciones-viajes, '\e999');
+
+@include makeIcon(Opciones, '\e99a');
+
+@include makeIcon(Pblico, '\e99b');
+
+@include makeIcon(Perfil-imagen-sin-foto, '\e99c');
+
+@include makeIcon(Privado, '\e99d');
+
+// .icon-Seguir-otro-viaje:before {
+//     content: "\e99e";
+//     color: #eff4fa;
+// }
+
+// .icon-Siguiendo-otro-viaje:before {
+//     content: "\e99f";
+//     color: #eff4fa;
+// }
+
+@include makeIcon(Ubicaicon-publicacion, '\e9a0');
+
+// .icon-VIdeo-imagen:before {
+//     content: "\e9a1";
+//     color: #374355;
+// }
+
+@include makeIcon(Vista-Calendario, '\e9a2');
+
+@include makeIcon(Vista-Flujo, '\e9a3');

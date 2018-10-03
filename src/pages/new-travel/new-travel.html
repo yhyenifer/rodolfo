@@ -1,0 +1,108 @@
+<!--
+  Generated template for the NewTravelPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+    <ion-navbar>
+        <ion-row>
+
+            <ion-col col-10>
+                <ion-item class="txt fondo_superior">
+
+                    <ion-input type="text"
+                               [(ngModel)]="titleTrip"
+                               class="tutiloviaje txt fondo_superior font_black font_title"
+                               placeholder="{{'TITULOVIAJE' | translate}}"
+                               required></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col col-2
+                     class="aling_right">
+
+                <ion-icon name="gl-publico"></ion-icon>
+
+
+
+
+            </ion-col>
+
+        </ion-row>
+
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding
+             class="fondonNewTravels">
+    <ion-row>
+
+        <ion-item class="txt btn_fondo borde-abajo-inp  ">
+            <ion-label color="primary"
+                       floating>{{'SELECCIONDESTINO' | translate}}</ion-label>
+            <ion-input type="text"
+                       class="txtN fondo_input borde "></ion-input>
+
+
+        </ion-item>
+    </ion-row>
+    <ion-row radio-group>
+
+        <ion-col>
+
+
+            <ion-item class="btn_fondo">
+                <ion-label class="color_blanco"> {{'PLACER' | translate}}</ion-label>
+                <ion-radio value="placer"
+                           checked></ion-radio>
+
+
+            </ion-item>
+        </ion-col>
+        <ion-col>
+
+            <ion-item class="btn_fondo">
+                <ion-label class="color_blanco"> {{'NEGOCIOS' | translate}}</ion-label>
+                <ion-radio value="negocios"></ion-radio>
+
+
+            </ion-item>
+        </ion-col>
+    </ion-row>
+    <ion-row class="btn_fondo borde-abajo-inp ">
+        <ion-item>
+            <ion-label> {{'FECHA' | translate}}</ion-label>
+            <ion-datetime class="btn_fondo"
+                          displayFormat="DD MMM  YYYY"></ion-datetime>
+        </ion-item>
+    </ion-row>
+    <ion-row>
+        <ion-item>
+            <ion-label stacked>{{'COMENTARIOVIAJE' | translate}}</ion-label>
+            <ion-textarea class="style_textarea"
+                          [(ngModel)]="commentTrip"></ion-textarea>
+        </ion-item>
+    </ion-row>
+    <ion-row>
+        <ion-item class="txt btn_fondo borde-abajo-inp  ">
+            <ion-label color="primary"
+                       floating>{{'QUIENVIAJACONTIGO' | translate}}</ion-label>
+            <ion-input type="text"
+                       class="txtN fondo_input borde "></ion-input>
+        </ion-item>
+    </ion-row>
+    <ion-row class="btn_crear">
+        <button ion-button
+                (click)="crearNuevoViaje()"
+                id="btn_login"
+                color="app_btn_login"
+                class="btn_full font_white ">
+            {{'CREARVIAJE' | translate}}
+        </button>
+
+    </ion-row>
+
+</ion-content>

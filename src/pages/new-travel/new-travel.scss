@@ -1,0 +1,78 @@
+page-new-travel {
+	.fondonNewTravels {
+		background: url('../assets/imgs/fondos/nuevo-viaje.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.fontTitle {
+		font-weight: bold;
+		font-size: 22px;
+	}
+
+	.item-md.item-block .item-inner {
+		border: none;
+	}
+
+	.item-md {
+		background: transparent;
+	}
+
+	.item-ios {
+		background: transparent;
+	}
+
+	.item-ios.item-block .item-inner {
+		border: none;
+	}
+
+	.item-input ion-input {
+		background: transparent;
+	}
+
+	.item-ios .radio-ios {
+		margin: 8px 45px 8px 8px;
+	}
+
+	.item-datetime .label-md {
+		color: white;
+	}
+
+	.datetime-text {
+		color: white;
+	}
+
+	.style_textarea {
+		background: white;
+		color: rgb(61, 71, 81) !important;
+		border-radius: 5px;
+		height: 100px;
+	}
+
+	.label-md[stacked],
+	.label-md[floating] {
+		color: white;
+		font-size: 14px;
+		padding: 4px 0;
+	}
+
+	.label-ios[stacked],
+	.label-ios[floating] {
+		color: white;
+		font-size: 14px;
+		padding: 4px 0;
+	}
+
+	.style_textarea .text-input-md {
+		color: rgb(61, 71, 81);
+	}
+
+	.btn_crear {
+		padding: 25px 0;
+	}
+
+	.tutiloviaje .text-input-md {
+		color: rgb(45, 61, 76);
+	}
+}
