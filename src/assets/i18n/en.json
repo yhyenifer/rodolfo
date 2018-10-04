@@ -35,7 +35,12 @@
     "FECHA": "Date",
     "COMENTARIOVIAJE": "Agrega un comentario para este viaje_in",
     "QUIENVIAJACONTIGO": "¿Quién viaja contigo?",
-    "MENSAJECREACIONEXITO": "El viaje se ha creado exitosamente_in"
+    "MENSAJECREACIONEXITO": "El viaje se ha creado exitosamente_in",
+
+
+    "Comentario": "variables de metas",
+    "METASTITULO": "Metas del Viaje_in",
+    "AGREGARMETA": "Agregar Meta_in"
 
 
 

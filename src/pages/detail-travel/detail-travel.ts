@@ -1,5 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams, Navbar, ModalController } from 'ionic-angular';
+import {
+	IonicPage,
+	NavController,
+	NavParams,
+	Navbar,
+	ModalController,
+	ModalOptions
+} from 'ionic-angular';
 import { MyTravelsPage } from '../my-travels/my-travels';
 import { isRightSide } from 'ionic-angular/util/util';
 import { MetasPage } from '../metas/metas';
@@ -53,7 +60,11 @@ export class DetailTravelPage {
 		this.presentProfileModal();
 	}
 	presentProfileModal() {
-		let profileModal = this.modalCtrl.create(MetasPage);
+		const myModalOptions: ModalOptions = {
+			enableBackdropDismiss: false,
+			cssClass: 'pricebreakup'
+		};
+		let profileModal = this.modalCtrl.create(MetasPage, myModalOptions);
 		profileModal.present();
 	}
 	ionViewDidLoad() {

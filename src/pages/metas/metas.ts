@@ -10,16 +10,42 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-metas',
-  templateUrl: 'metas.html',
+	selector: 'page-metas',
+	templateUrl: 'metas.html'
 })
 export class MetasPage {
+	chats: any[];
+	constructor(public navCtrl: NavController, public navParams: NavParams) {
+		this.chats = [
+			{
+				name: 'Conocer el templo de Zeus',
+				state: '0'
+			},
+			{
+				name: 'Conocer el teatro Dionisio',
+				state: '1'
+			},
+			{
+				name: 'Kolonaki',
+				state: '2'
+			},
+			{
+				name: 'Zappeion',
+				state: '1'
+			}
+		];
+	}
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+	ionViewDidLoad() {
+		console.log('ionViewDidLoad MetasPage');
+	}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MetasPage');
-  }
-
+	cumplir(meta) {
+		console.log('cumplir meta');
+		console.log(meta);
+	}
+	incumplir(meta) {
+		console.log('incumplir meta');
+		console.log(meta);
+	}
 }

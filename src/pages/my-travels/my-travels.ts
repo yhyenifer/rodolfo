@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { Pipe, PipeTransform } from '@angular/core';
@@ -19,6 +19,7 @@ import { DetailTravelPage } from '../detail-travel/detail-travel';
 	templateUrl: 'my-travels.html'
 })
 export class MyTravelsPage {
+	@ViewChild('input') buscar;
 	viaje: any;
 	tab1Root = '';
 	tab2Root = '';

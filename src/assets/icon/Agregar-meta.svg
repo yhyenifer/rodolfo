@@ -1,0 +1,24 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="13.439" height="13.439" viewBox="0 0 13.439 13.439">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #2d3d4c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <title>Agregar-meta</title>
+  <g>
+    <circle class="cls-1" cx="6.719" cy="6.719" r="6.719"/>
+    <g>
+      <line class="cls-2" x1="6.719" y1="3.298" x2="6.719" y2="10.141"/>
+      <line class="cls-2" x1="3.298" y1="6.719" x2="10.141" y2="6.719"/>
+    </g>
+  </g>
+</svg>

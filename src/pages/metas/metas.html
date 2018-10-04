@@ -4,15 +4,79 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>metas</ion-title>
-  </ion-navbar>
-
-</ion-header>
 
 
-<ion-content padding>
+
+<ion-content padding
+             class="fondo">
+    <ion-row class="center">
+        <ion-col col-1>
+            <h2 class="positionIcon">
+                <ion-icon name="gl-metaTitulo"></ion-icon>
+            </h2>
+        </ion-col>
+        <ion-col>
+            <h2 class="font_100 top_margin3 colorFont ">
+                {{'METASTITULO' | translate }} 1/7
+            </h2>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-item class="fondo_input inputMeta">
+
+                <ion-input placeholder="{{'AGREGARMETA' | translate}}">
+
+                </ion-input>
+
+            </ion-item>
+            <button class="btn_add">
+                <img class="tam_icon"
+                     src="assets/icon/Agregar-meta.svg"> </button>
+        </ion-col>
+
+
+    </ion-row>
+    <ion-row class="listaMetas">
+        <ion-list class="lista">
+
+
+            <ion-item-sliding *ngFor="let chat of chats"
+                              #item>
+                <ion-item class="itemMeta">
+
+                    <h2>{{chat.name}}</h2>
+
+                </ion-item>
+
+                <ion-item-options class="itemMeta">
+                    <button ion-button
+                            color="light"
+                            (ionSwipe)="cumplir(item)"
+                            expandable
+                            (click)="cumplir(item)">
+
+                        <div class="expand-hide">Cumplir</div>
+
+                    </button>
+
+
+                </ion-item-options>
+
+                <ion-item-options class="itemMeta"
+                                  side="left"
+                                  (ionSwipe)="incumplir(item)">
+                    <button ion-button
+                            color="danger"
+                            expandable
+                            (click)="incumplir(item)">
+
+                        <div class="expand-hide">Incumplir</div>
+
+                    </button>
+                </ion-item-options>
+            </ion-item-sliding>
+        </ion-list>
+    </ion-row>
 
 </ion-content>

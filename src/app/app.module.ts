@@ -23,6 +23,7 @@ import { DetailTravelPageModule } from '../pages/detail-travel/detail-travel.mod
 
 import { IonicStorageModule } from '@ionic/storage';
 import { MetasPageModule } from '../pages/metas/metas.module';
+import { NotificationPageModule } from '../pages/notification/notification.module';
 
 export function createTranslateLoader(http: HttpClient) {
 	return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -45,7 +46,8 @@ export function createTranslateLoader(http: HttpClient) {
 		NewTravelPageModule,
 		DetailTravelPageModule,
 		MetasPageModule,
-		IonicStorageModule.forRoot()
+		IonicStorageModule.forRoot(),
+		NotificationPageModule
 	],
 	bootstrap: [ IonicApp ],
 	entryComponents: [

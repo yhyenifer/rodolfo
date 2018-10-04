@@ -35,7 +35,12 @@
     "FECHA": "Fecha",
     "COMENTARIOVIAJE": "Agrega un comentario para este viaje",
     "QUIENVIAJACONTIGO": "¿Quién viaja contigo?",
-    "MENSAJECREACIONEXITO": "El viaje se ha creado exitosamente"
+    "MENSAJECREACIONEXITO": "El viaje se ha creado exitosamente",
+
+
+    "Comentario": "variables de metas",
+    "METASTITULO": "Metas del Viaje",
+    "AGREGARMETA": "Agregar Meta"
 
 
 
