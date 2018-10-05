@@ -8,7 +8,7 @@
 
 
 <ion-content padding
-             class="fondo">
+             class="fondo no-scroll ">
     <ion-row class="center">
         <ion-col col-1>
             <h2 class="positionIcon">
@@ -17,44 +17,63 @@
         </ion-col>
         <ion-col>
             <h2 class="font_100 top_margin3 colorFont ">
-                {{'METASTITULO' | translate }} 1/7
+                {{'METASTITULO' | translate }} {{totalMetas}}/{{totalMetasCumplidas}}
             </h2>
         </ion-col>
+
     </ion-row>
     <ion-row>
         <ion-col>
             <ion-item class="fondo_input inputMeta">
 
-                <ion-input placeholder="{{'AGREGARMETA' | translate}}">
+                <ion-input [(ngModel)]="name"
+                           placeholder="{{'AGREGARMETA' | translate}}">
 
                 </ion-input>
 
             </ion-item>
-            <button class="btn_add">
+            <button class="btn_add"
+                    (click)="agregarMeta()">
                 <img class="tam_icon"
                      src="assets/icon/Agregar-meta.svg"> </button>
         </ion-col>
 
 
     </ion-row>
+
     <ion-row class="listaMetas">
+
+
         <ion-list class="lista">
 
 
-            <ion-item-sliding *ngFor="let chat of chats"
-                              #item>
+            <ion-item-sliding *ngFor="let meta of metas"
+                              #item
+                              (ionDrag)="logDrag($event, meta, item)">
                 <ion-item class="itemMeta">
-
-                    <h2>{{chat.name}}</h2>
+                    <ion-label class="label_meta">
+                        <h2 class="label_meta">{{meta.name}}</h2>
+                    </ion-label>
+                    <button item-end
+                            class="btn_fondo"
+                            *ngIf="meta.state ==1">
+                        <img class="tam_img"
+                             src="assets/icon/Finalizar-meta.svg">
+                    </button>
+                    <button item-end
+                            class="btn_fondo"
+                            (click)="verRazon(meta)"
+                            *ngIf="meta.state ==2">
+                        <img class="tam_img"
+                             src="assets/icon/eliminar-meta.svg">
+                    </button>
 
                 </ion-item>
 
                 <ion-item-options class="itemMeta">
                     <button ion-button
                             color="light"
-                            (ionSwipe)="cumplir(item)"
-                            expandable
-                            (click)="cumplir(item)">
+                            expandable>
 
                         <div class="expand-hide">Cumplir</div>
 
@@ -64,19 +83,19 @@
                 </ion-item-options>
 
                 <ion-item-options class="itemMeta"
-                                  side="left"
-                                  (ionSwipe)="incumplir(item)">
+                                  side="left">
                     <button ion-button
                             color="danger"
-                            expandable
-                            (click)="incumplir(item)">
+                            expandable>
 
                         <div class="expand-hide">Incumplir</div>
 
                     </button>
                 </ion-item-options>
             </ion-item-sliding>
+
         </ion-list>
+
     </ion-row>
 
 </ion-content>

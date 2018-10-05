@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the ContenidoPage page.
@@ -10,16 +10,34 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-contenido',
-  templateUrl: 'contenido.html',
+	selector: 'page-contenido',
+	templateUrl: 'contenido.html'
 })
 export class ContenidoPage {
+	identificador: any;
+	constructor(
+		public navCtrl: NavController,
+		public navParams: NavParams,
+		public viewCtrl: ViewController
+	) {
+		this.identificador = this.navParams.get('param');
+		console.log(this.identificador);
+	}
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+	ionViewDidLoad() {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ContenidoPage');
-  }
+	agregarNuevoContenido() {
+		// this.identificador 1 si es comentario p 0 si es multimedia solo
+		if (this.identificador == 0) {
+			console.log('guardar contenido');
+		}
+		if (this.identificador == 1) {
+			console.log('guardar comentario');
+		}
+		this.viewCtrl.dismiss();
+	}
 
+	abrirGaleria() {}
+
+	abrirCamara() {}
 }

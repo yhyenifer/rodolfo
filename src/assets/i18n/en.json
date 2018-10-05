@@ -40,7 +40,18 @@
 
     "Comentario": "variables de metas",
     "METASTITULO": "Metas del Viaje_in",
-    "AGREGARMETA": "Agregar Meta_in"
+    "AGREGARMETA": "Agregar Meta_in",
+    "MENSAJEINCUMPLIRMETA": "¡Oh!, ¿Que pasó con tu meta?_in",
+    "TITULOINCUMPLIRMETA": "Meta incumplida porque:_in",
+    "METAVACIA": "Indique una meta_in",
+
+    "Comentario": "variables de agregar contenido",
+    "COMENTARIOESTEVIAJE": "Comentario de este viaje_in",
+    "QUIENESTACONTIGO": "¿Quién está contigo?_in",
+    "UBICACION": "Ubicación_in",
+    "CAMARA": "Cámara_in",
+    "GALERIA": "Galeria_in"
+
 
 
 

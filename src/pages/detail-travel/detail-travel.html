@@ -46,11 +46,13 @@
                  src="assets/icon/Agregar-contenido_Agregar contenido.svg">
         </button>
         <ion-fab-list side="top">
-            <button ion-fab>
+            <button ion-fab
+                    (click)="agregarContenido(0)">
                 <ion-icon class="fondo_gris"
                           name="gl-multimedia"></ion-icon>
             </button>
-            <button ion-fab>
+            <button ion-fab
+                    (click)="agregarContenido(1)">
                 <ion-icon class="fondo_gris"
                           name="gl-comentario"></ion-icon>
             </button>

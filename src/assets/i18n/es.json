@@ -40,7 +40,18 @@
 
     "Comentario": "variables de metas",
     "METASTITULO": "Metas del Viaje",
-    "AGREGARMETA": "Agregar Meta"
+    "AGREGARMETA": "Agregar Meta",
+    "MENSAJEINCUMPLIRMETA": "¡Oh!, ¿Que pasó con tu meta?",
+    "TITULOINCUMPLIRMETA": "Meta incumplida porque: ",
+    "METAVACIA": "Indique una meta",
+
+    "Comentario": "variables de agregar contenido",
+    "COMENTARIOESTEVIAJE": "Comentario de este viaje",
+    "QUIENESTACONTIGO": "¿Quién está contigo?",
+    "UBICACION": "Ubicación",
+    "CAMARA": "Cámara",
+    "GALERIA": "Galeria"
+
 
 
 

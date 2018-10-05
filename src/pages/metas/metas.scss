@@ -1,4 +1,7 @@
 page-metas {
+    .no-scroll .scroll-content {
+        overflow: hidden;
+    }
 
     .fondo {
         background: rgb(238, 246, 255);
@@ -34,7 +37,6 @@ page-metas {
         border-radius: 40px;
         border: none;
         position: absolute;
-
     }
 
     .btn_add {
@@ -43,7 +45,6 @@ page-metas {
         height: 32px;
         width: 32px;
         float: right;
-
 
         background: transparent;
     }
@@ -63,8 +64,9 @@ page-metas {
         width: 100%;
         background: #2d3d4c;
         padding: 5px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-radius: 10px;
+        height: 250px;
+        overflow: auto;
     }
 
     .itemMeta {
@@ -72,4 +74,19 @@ page-metas {
         background: rgb(45, 61, 76);
         border-bottom: none;
     }
+
+    .tam_img {
+        width: 22px;
+    }
+
+    .label_meta {
+
+        margin-top: 6px !important;
+    }
+
+
+
+
+
+
 }

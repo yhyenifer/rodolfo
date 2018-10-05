@@ -10,6 +10,7 @@ import {
 import { MyTravelsPage } from '../my-travels/my-travels';
 import { isRightSide } from 'ionic-angular/util/util';
 import { MetasPage } from '../metas/metas';
+import { ContenidoPage } from '../contenido/contenido';
 
 /**
  * Generated class for the DetailTravelPage page.
@@ -54,19 +55,29 @@ export class DetailTravelPage {
 	}
 
 	agregarMeta() {
-		console.log('agregar meta aqui');
-		console.log(this.viaje);
-		//this.navCtrl.setRoot(MetasPage);
-		this.presentProfileModal();
+		this.presentMetaModal();
 	}
-	presentProfileModal() {
+	presentMetaModal() {
 		const myModalOptions: ModalOptions = {
-			enableBackdropDismiss: false,
-			cssClass: 'pricebreakup'
+			enableBackdropDismiss: true,
+			cssClass: 'modalmetas'
 		};
-		let profileModal = this.modalCtrl.create(MetasPage, myModalOptions);
+		let profileModal = this.modalCtrl.create(MetasPage, {}, myModalOptions);
 		profileModal.present();
 	}
+
+	agregarContenido(param) {
+		this.presentContenidoModal(param);
+	}
+	presentContenidoModal(param) {
+		const myModalOptions: ModalOptions = {
+			enableBackdropDismiss: true,
+			cssClass: 'modalcontenido'
+		};
+		let profileModal = this.modalCtrl.create(ContenidoPage, { param: param }, myModalOptions);
+		profileModal.present();
+	}
+
 	ionViewDidLoad() {
 		this.center = false;
 

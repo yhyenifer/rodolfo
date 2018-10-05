@@ -59,7 +59,6 @@ export class NewTravelPage {
 		private storage: Storage,
 		public navCtrl: NavController,
 		public navParams: NavParams,
-		private translateService: TranslateService,
 		private alertCtrl: AlertController,
 		private translate: TranslateService
 	) {

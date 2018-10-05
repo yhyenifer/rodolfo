@@ -4,15 +4,71 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>contenido</ion-title>
-  </ion-navbar>
-
-</ion-header>
 
 
-<ion-content padding>
+
+<ion-content padding
+             class="fondo no-scroll ">
+
+    <ion-row>
+        <ion-col>
+            <button ion-fab
+                    (click)="abrirGaleria()"
+                    class="fondo_blanco centrar">
+                <!-- <ion-icon name="add"></ion-icon> -->
+                <img class="tam_icon"
+                     src="assets/icon/Galeria.svg">
+                <p class="tamañoLetra">Galeria</p>
+            </button>
+        </ion-col>
+        <ion-col>
+            <button ion-fab
+                    (click)="abrirCamara()"
+                    class="fondo_blanco centrar">
+                <!-- <ion-icon name="add"></ion-icon> -->
+                <img class="tam_icon"
+                     src="assets/icon/Camara.svg">
+                <ion-label class="tamañoLetra">Galeria</ion-label>
+
+            </button>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-label class="font_black tamFont">{{'COMENTARIOESTEVIAJE' | translate}}</ion-label>
+        <ion-item class="style_textarea">
+
+            <ion-textarea [(ngModel)]="commentTrip"></ion-textarea>
+        </ion-item>
+    </ion-row>
+    <ion-row>
+        <ion-item class="txt btn_fondo borde-abajo-inp  ">
+            <ion-label class="font_black"
+                       floating>{{'QUIENESTACONTIGO' | translate}}</ion-label>
+            <ion-input type="text"
+                       class=" font_black tamFont"></ion-input>
+        </ion-item>
+    </ion-row>
+    <ion-row>
+        <ion-item class="txt btn_fondo borde-abajo-inp  ">
+            <ion-label class="font_black"
+                       floating>{{'UBICACION' | translate}}</ion-label>
+            <ion-input type="text"
+                       class=" font_black tamFont"></ion-input>
+        </ion-item>
+    </ion-row>
+    <ion-row center
+             class="">
+        <ion-col>
+            <button ion-button
+                    (click)="agregarNuevoContenido()"
+                    id="btn_login"
+                    color="app_btn_login"
+                    class=" font_white style_btn">
+                {{'ACEPTAR' | translate}}
+            </button>
+        </ion-col>
+    </ion-row>
+
 
 </ion-content>

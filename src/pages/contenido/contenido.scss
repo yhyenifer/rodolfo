@@ -1,3 +1,29 @@
 page-contenido {
+    .no-scroll .scroll-content {
+        overflow: hidden;
+    }
 
+    .fondo {
+        background: rgb(238, 246, 255);
+    }
+
+    .style_textarea {
+        border-radius: 10px;
+    }
+
+    .tamFont {
+        font-size: 15px;
+    }
+
+    .style_btn {
+        border-radius: 40px;
+        width: 8em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .tamañoLetra {
+        font-size: 9px;
+    }
 }
