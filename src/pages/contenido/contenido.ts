@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 	templateUrl: 'contenido.html'
 })
 export class ContenidoPage {
+	margen_arriba: string;
 	identificador: any;
 	constructor(
 		public navCtrl: NavController,
@@ -21,7 +22,11 @@ export class ContenidoPage {
 		public viewCtrl: ViewController
 	) {
 		this.identificador = this.navParams.get('param');
-		console.log(this.identificador);
+		if(this.identificador == 1){
+			this.margen_arriba = "margen_arriba";
+		}else{
+			this.margen_arriba = "";
+		}
 	}
 
 	ionViewDidLoad() {}

@@ -10,7 +10,7 @@
 <ion-content padding
              class="fondo no-scroll ">
 
-    <ion-row>
+    <ion-row  *ngIf="identificador==0">
         <ion-col>
             <button ion-fab
                     (click)="abrirGaleria()"
@@ -18,7 +18,6 @@
                 <!-- <ion-icon name="add"></ion-icon> -->
                 <img class="tam_icon"
                      src="assets/icon/Galeria.svg">
-                <p class="tamañoLetra">Galeria</p>
             </button>
         </ion-col>
         <ion-col>
@@ -28,7 +27,6 @@
                 <!-- <ion-icon name="add"></ion-icon> -->
                 <img class="tam_icon"
                      src="assets/icon/Camara.svg">
-                <ion-label class="tamañoLetra">Galeria</ion-label>
 
             </button>
         </ion-col>
@@ -60,7 +58,7 @@
     <ion-row center
              class="">
         <ion-col>
-            <button ion-button
+            <button ion-button [ngClass]="margen_arriba"
                     (click)="agregarNuevoContenido()"
                     id="btn_login"
                     color="app_btn_login"

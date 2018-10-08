@@ -25,6 +25,7 @@ import { ContenidoPage } from '../contenido/contenido';
 	templateUrl: 'detail-travel.html'
 })
 export class DetailTravelPage {
+	contenido: { id: number; viaje: number; imagen: string; coment: string; state: number; seeTools: boolean; dia:number; fecha: string }[];
 	imagen: any;
 	@ViewChild(Navbar) navBar: Navbar; // add this line
 	nombreViaje: String;
@@ -40,8 +41,44 @@ export class DetailTravelPage {
 		this.viaje = this.navParams.get('viaje');
 		this.nombreViaje = this.viaje.nombre;
 		this.center = false;
+		this.contenido=[
+			{
+				id: 1,
+				viaje: 1,
+				imagen: 'assets/imgs/misviajes/selfie4.jpeg',
+				coment: "mi viaje",
+				state: 1,
+				seeTools: false,
+				dia: 1,
+				fecha: "Oct. 1, 2018"
 
-		if (this.imagen == undefined) {
+			},
+			{
+				id: 1,
+				viaje: 2,
+				imagen: 'assets/imgs/misviajes/selfie2.jpeg',
+				coment: "Quindío lleno de cosas lindas",
+				state: 1,
+				seeTools: false,
+				dia: 1,
+				fecha: "Sept. 13, 2018"
+
+			},
+			{
+				id: 1,
+				viaje: 2,
+				imagen: 'assets/imgs/misviajes/selfie5.jpeg',
+				coment: "¡Sorprendente!",
+				state: 1,
+				seeTools: false,
+				dia: 2,
+				fecha: "Sept. 14, 2018"
+
+			}
+		];
+
+
+		if (this.contenido == undefined) {
 			this.center = true;
 			this.efecto = 'infinite';
 			this.viaje.imagen = 'assets/imgs/admin/default.jpg';

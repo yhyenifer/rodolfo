@@ -31,9 +31,67 @@
 </ion-header>
 
 
-<ion-content padding
+<ion-content 
              class="fondoDetailTravels">
+             <ion-card *ngFor="let item of contenido"
+             class="fondoOpaco">
+             <!-- <div style="background-color:#FAF0E6; 
+width:200px;height:200px; 
+border-right:2px solid black; 
+"></div> -->
+       <ion-card-header>
+           <ion-col class="degrade">
 
+           </ion-col>
+           <ion-col class="opcionesCard">
+            
+               <button class="btn_fondo"
+                       (click)="showBarrTools()">
+                   <ion-icon name="gl-opciones"></ion-icon>
+               </button>
+           </ion-col>
+
+       </ion-card-header>
+
+       <img [src]="item.imagen"
+            (click)="seleccionViaje(item)"
+            (press)="presionado(item)" />
+       <!-- barra de herramientas por carta pulse-->
+       <ion-card-header class=" btn_fondo animated  "
+                        [ngClass]="efecto"
+                        *ngIf="item.seeTools">
+           <ion-col>
+               <button class="btn_fondo paddin_aling"
+                       (click)="showSearch()">
+                   <ion-icon name="gl-btn-editar"></ion-icon>
+               </button>
+               <button class="btn_fondo paddin_aling"
+                       (click)="showSearch()">
+                   <ion-icon name="gl-btn-comentarios"></ion-icon>
+               </button>
+               <button class="btn_fondo paddin_aling">
+                   <ion-icon name="gl-btn-etiquetados"></ion-icon>
+               </button>
+               <button class="btn_fondo paddin_aling"
+                       (click)="showSearch()">
+                   <ion-icon name="gl-btn-finalizar"></ion-icon>
+               </button>
+               <button class="btn_fondo paddin_aling"
+                       (click)="showSearch()">
+                   <ion-icon name="gl-btn-compartir"></ion-icon>
+               </button>
+           </ion-col>
+       </ion-card-header>
+
+       <ion-card-content class="fondTitleCard">
+
+           <ion-card-title class="titleCard">
+               Día {{item.dia}} -  {{item.fecha}}
+            </ion-card-title>
+
+
+       </ion-card-content>
+   </ion-card>
     <ion-fab bottom
              right
              class="animated pulse"

@@ -12,14 +12,10 @@ export class ContactPage {
 	constructor(public navCtrl: NavController) {}
 
 	ionViewWillEnter() {
-		console.log('ingresa');
 		this.url = 'assets/gif/gif1.gif';
 		this.rootPage = ContactPage;
 	}
 	ionViewWillLeave() {
-		console.log('sale');
-
-		this.url = '';
-		console.log(this.url);
+	
 	}
 }
