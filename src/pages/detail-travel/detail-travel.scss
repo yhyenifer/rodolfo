@@ -29,4 +29,46 @@ page-detail-travel {
         height: 80px;
     }
 
+    .vl {
+        border-left: 2px solid white;
+        height: 55vh;
+        margin-right: auto;
+        position: relative;
+        display: auto;
+        margin: 4% 50vw;
+    }
+
+    .v2 {
+        /*IMPORTANTE*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+
+    .absoluta {
+        position: absolute;
+    }
+
+    .zindex {
+        z-index: -10000;
+    }
+
+    .ubicacion {
+        position: relative !important;
+    }
+
+    .fondoOpaco {
+        background: rgba(231, 236, 242, 1);
+    }
+
+    .display_no {
+        display: none;
+    }
+
+    .display_si {
+        display: block;
+    }
+
+
 }

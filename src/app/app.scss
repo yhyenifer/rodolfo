@@ -157,6 +157,12 @@ ion-icon {
         font-size: 34px;
     }
 
+    &[class*="gl-btn-ubicacion"] {
+        mask-image: url(../assets/icon/Ubicaicon-publicacion.svg);
+        color: rgb(45, 61, 76);
+        font-size: 34px;
+    }
+
     &[class*="gl-btn-etiquetados"] {
         mask-image: url(../assets/icon/etiquetados-mi-viaje.svg);
         color: rgb(45, 61, 76);

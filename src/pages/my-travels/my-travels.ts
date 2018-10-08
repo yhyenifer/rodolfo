@@ -64,6 +64,7 @@ export class MyTravelsPage {
 		];
 		// almacena dentro del arreglo el viaje creado
 		// esto es mientras se implementa la persistencia
+		console.log(this.viaje);
 		if (this.viaje != undefined) {
 			this.viajes.push(this.viaje);
 		}
