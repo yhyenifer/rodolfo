@@ -35,6 +35,7 @@ export class DetailTravelPage {
 		seeTools: boolean;
 		dia: number;
 		fecha: string;
+		tipo: number;
 	}[];
 	imagen: any;
 	noClick: boolean;
@@ -66,7 +67,8 @@ export class DetailTravelPage {
 					state: 1,
 					seeTools: false,
 					dia: 1,
-					fecha: 'Oct. 1, 2018'
+					fecha: 'Oct. 1, 2018',
+					tipo: 0
 				}
 			];
 		}
@@ -80,7 +82,8 @@ export class DetailTravelPage {
 					state: 1,
 					seeTools: false,
 					dia: 1,
-					fecha: 'Sept. 13, 2018'
+					fecha: 'Sept. 13, 2018',
+					tipo: 0
 				},
 				{
 					id: 2,
@@ -90,7 +93,8 @@ export class DetailTravelPage {
 					state: 1,
 					seeTools: false,
 					dia: 2,
-					fecha: 'Sept. 14, 2018'
+					fecha: 'Sept. 14, 2018',
+					tipo: 0
 				},
 				{
 					id: 3,
@@ -100,7 +104,8 @@ export class DetailTravelPage {
 					state: 1,
 					seeTools: false,
 					dia: 3,
-					fecha: 'Sept. 15, 2018'
+					fecha: 'Sept. 15, 2018',
+					tipo: 0
 				},
 				{
 					id: 4,
@@ -110,7 +115,8 @@ export class DetailTravelPage {
 					state: 1,
 					seeTools: false,
 					dia: 4,
-					fecha: 'Sept. 16, 2018'
+					fecha: 'Sept. 16, 2018',
+					tipo: 0
 				}
 			];
 		}
@@ -145,15 +151,19 @@ export class DetailTravelPage {
 	}
 	// abre la modal del contenido de acuerdo al param, si es comentario o multimedia
 	agregarContenido(param) {
-		this.presentContenidoModal(param);
+		this.presentContenidoModal(param, {});
 	}
 	// crea la modal de contenido de acuerdo al param, si es comenetario o multimedia
-	presentContenidoModal(param) {
+	presentContenidoModal(param, contenido) {
 		const myModalOptions: ModalOptions = {
 			enableBackdropDismiss: true,
 			cssClass: 'modalcontenido'
 		};
-		let profileModal = this.modalCtrl.create(ContenidoPage, { param: param }, myModalOptions);
+		let profileModal = this.modalCtrl.create(
+			ContenidoPage,
+			{ param: param, contenido: contenido },
+			myModalOptions
+		);
 		profileModal.present();
 	}
 
@@ -196,17 +206,21 @@ export class DetailTravelPage {
 			}
 		}
 	}
-		// abre la modal que permite finalizar un viaje 
-		finalizarViaje() {
-			this.presentFinalizarViajeModal();
-		}
-		// crea la modal de finalizar un viaje 
-		presentFinalizarViajeModal() {
-			const myModalOptions: ModalOptions = {
-				enableBackdropDismiss: true,
-				cssClass: 'modalfinalizarviaje'
-			};
-			let profileModal = this.modalCtrl.create(FinalizarViajePage, {}, myModalOptions);
-			profileModal.present();
-		}
+	// abre la modal que permite finalizar un viaje
+	finalizarViaje() {
+		this.presentFinalizarViajeModal();
+	}
+	// crea la modal de finalizar un viaje
+	presentFinalizarViajeModal() {
+		const myModalOptions: ModalOptions = {
+			enableBackdropDismiss: true,
+			cssClass: 'modalfinalizarviaje'
+		};
+		let profileModal = this.modalCtrl.create(FinalizarViajePage, {}, myModalOptions);
+		profileModal.present();
+	}
+
+	editarContenido(contenido) {
+		this.presentContenidoModal(contenido.tipo, contenido);
+	}
 }

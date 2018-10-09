@@ -10,12 +10,12 @@
 <ion-content padding
              class="fondo no-scroll ">
 
-    <ion-row  *ngIf="identificador==0">
+    <ion-row *ngIf="identificador==0">
         <ion-col>
             <button ion-fab
                     (click)="abrirGaleria()"
-                    class="fondo_blanco centrar">
-                <!-- <ion-icon name="add"></ion-icon> -->
+                    class="fondo_blanco flotarder correrder">
+
                 <img class="tam_icon"
                      src="assets/icon/Galeria.svg">
             </button>
@@ -23,17 +23,33 @@
         <ion-col>
             <button ion-fab
                     (click)="abrirCamara()"
-                    class="fondo_blanco centrar">
-                <!-- <ion-icon name="add"></ion-icon> -->
+                    class="fondo_blanco flotarizrq correrizq">
+
                 <img class="tam_icon"
                      src="assets/icon/Camara.svg">
 
             </button>
         </ion-col>
-    </ion-row>
 
+    </ion-row>
     <ion-row>
-        <ion-label class="font_black tamFont">{{'COMENTARIOESTEVIAJE' | translate}}</ion-label>
+        <!--  -->
+        <ion-col col-4n
+                 *ngFor="let item of multimedia; let id= index">
+            <ion-icon name="close"
+                      class="deleteIcon"
+                      (click)="eliminarFoto(id)"></ion-icon>
+            <!-- src="assets/imgs/misviajes/selfie4.jpeg" -->
+            <img class="tamañoDeterminado"
+                 [src]="item"
+                 *ngIf="item">
+        </ion-col>
+
+    </ion-row>
+    <ion-row>
+        <ion-label class="
+                 font_black
+                 tamFont">{{'COMENTARIOESTEVIAJE' | translate}}</ion-label>
         <ion-item class="style_textarea">
 
             <ion-textarea [(ngModel)]="commentTrip"></ion-textarea>
@@ -58,7 +74,8 @@
     <ion-row center
              class="">
         <ion-col>
-            <button ion-button [ngClass]="margen_arriba"
+            <button ion-button
+                    [ngClass]="margen_arriba"
                     (click)="agregarNuevoContenido()"
                     id="btn_login"
                     color="app_btn_login"

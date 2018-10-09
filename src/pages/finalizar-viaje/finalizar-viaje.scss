@@ -31,5 +31,29 @@ page-finalizar-viaje {
         pointer-events: none;
     }
 
-    
+    .tam_icon {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    .font_size {
+        font-size: 13px;
+    }
+
+    .style_icon {
+        margin: 0 0px;
+    }
+
+    .item-range ion-range {
+        width: 90%;
+    }
+
+    .style_btn {
+        border-radius: 40px;
+        width: 8em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
 }

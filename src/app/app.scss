@@ -330,6 +330,15 @@ ion-icon {
     margin-right: auto;
 }
 
+.flotarder {
+    float: right;
+}
+
+.flotarizrq {
+    float: left;
+
+}
+
 .txt input::placeholder {
     color: rgb(45, 61, 76);
     font-weight: bold;
@@ -467,7 +476,7 @@ ion-icon {
     overflow: hidden;
     max-width: 400px;
     width: 90%;
-    height: 60vh !important;
+    height: 67vh !important;
     top: 2%;
     bottom: 0;
     left: 0;
@@ -476,6 +485,7 @@ ion-icon {
     border: 0;
     background-color: rgb(231, 236, 242);
 }
+
 .modalfinalizarviaje .modal-wrapper {
     position: absolute;
     overflow: hidden;
@@ -554,16 +564,20 @@ ion-backdrop {
 .range-md .range-knob-min.range-knob-min .range-knob {
     border: 2px solid rgb(61, 71, 81);
     background: rgb(61, 71, 81);
- }
- .range-ios .range-knob-min.range-knob-min .range-knob {
+}
+
+.range-ios .range-knob-min.range-knob-min .range-knob {
     border: 2px solid rgb(61, 71, 81);
     background: rgb(61, 71, 81);
- }
+}
 
- .range-md-danger .range-knob, .range-md-danger .range-pin, .range-md-danger .range-pin::before {
+.range-md-danger .range-knob,
+.range-md-danger .range-pin,
+.range-md-danger .range-pin::before {
     background: rgb(61, 71, 81);
- }
+}
 
- .range-md-danger .range-bar-active,{
+.range-md-danger .range-bar-active,
+    {
     background: #bdbdbd;
- }
+}

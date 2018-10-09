@@ -8,6 +8,7 @@
     "EL": "El",
     "LA": "La",
     "ACEPTAR": "ACEPTAR",
+    "CANCELAR": "CANCELAR",
 
     "Comentario": "variables del pantalla inicial",
     "MSG_IDIOMA": "Idioma seleccionado",
@@ -52,10 +53,15 @@
     "CAMARA": "Cámara",
     "GALERIA": "Galeria",
 
-    
-"Comentario": "variables de finalizar viaje",
-"TITULOFINALIZARVIAJE": "Finalizar viaje",
-"INDICANOSESTADOANIMO": "Indicanos como la pasaste"
+
+    "Comentario": "variables de finalizar viaje",
+    "TITULOFINALIZARVIAJE": "Finalizar viaje",
+    "INDICANOSESTADOANIMO": "Indicanos como la pasaste",
+    "MAL": "Mal",
+    "ABURRIDO": "Aburrido",
+    "NORMAL": "Normal",
+    "FELIZ": "Feliz",
+    "ESTUPENDO": "Estupendo"
 
 
 

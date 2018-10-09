@@ -26,7 +26,29 @@ page-contenido {
     .tamañoLetra {
         font-size: 9px;
     }
-    .margen_arriba{
-        margin-top: 50px;
+
+    .margen_arriba {
+        margin-top: 60px;
+    }
+
+    .tamañoDeterminado {
+        width: 74px;
+        height: 44px;
+    }
+
+    .deleteIcon {
+        font-size: 14px;
+        position: absolute;
+        right: 10%;
+        top: 3px;
+
+    }
+
+    .correrder {
+        margin-right: 10%
+    }
+
+    .correrizq {
+        margin-left: 10%
     }
 }

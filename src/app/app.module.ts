@@ -27,6 +27,7 @@ import { NotificationPageModule } from '../pages/notification/notification.modul
 import { ContenidoPageModule } from '../pages/contenido/contenido.module';
 import { FinalizarViajePageModule } from '../pages/finalizar-viaje/finalizar-viaje.module';
 
+import { Camera } from '@ionic-native/camera';
 export function createTranslateLoader(http: HttpClient) {
 	return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
@@ -63,6 +64,11 @@ export function createTranslateLoader(http: HttpClient) {
 		MyTravelsPage,
 		LoginPage
 	],
-	providers: [ StatusBar, SplashScreen, { provide: ErrorHandler, useClass: IonicErrorHandler } ]
+	providers: [
+		StatusBar,
+		SplashScreen,
+		{ provide: ErrorHandler, useClass: IonicErrorHandler },
+		Camera
+	]
 })
 export class AppModule {}

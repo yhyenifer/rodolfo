@@ -7,13 +7,74 @@
 
 
 
-<ion-content padding class="fondo">
-  <h1 class="center">{{'TITULOFINALIZARVIAJE' | translate}}</h1>
-<ion-label>{{'INDICANOSESTADOANIMO' | translate}}</ion-label>
-<ion-item class="btn_fondo">
-    <ion-range min="1" max="5" step="1" snaps="true" [(ngModel)]="warmth" color="danger">
-   
-    </ion-range>
-  </ion-item>
+<ion-content padding
+             class="fondo">
+    <h1 class="center font_black">{{'TITULOFINALIZARVIAJE' | translate}}</h1>
+    <ion-label class="font_black"> {{'INDICANOSESTADOANIMO' | translate}}</ion-label>
+    <ion-row>
+        <ion-col class="style_icon"
+                 offset-sm->
+
+            <p class="font_black font_size aling_right">{{'MAL' | translate}}</p>
+            <img class="tam_icon"
+                 src="assets/icon/Mal.svg">
+        </ion-col>
+        <ion-col class="style_icon">
+            <p class="font_black font_size aling_right">{{'ABURRIDO' | translate}}</p>
+            <img class="tam_icon"
+                 src="assets/icon/Aburrido.svg">
+        </ion-col>
+        <ion-col class="style_icon">
+
+            <p class="font_black font_size aling_right">{{'NORMAL' | translate}}</p>
+            <img class="tam_icon"
+                 src="assets/icon/Normal.svg">
+        </ion-col>
+        <ion-col class="style_icon">
+            <p class="font_black font_size aling_right">{{'FELIZ' | translate}}</p>
+
+            <img class="tam_icon"
+                 src="assets/icon/Feliz.svg">
+        </ion-col>
+        <ion-col class="style_icon">
+            <p class="font_black font_size aling_right">{{'ESTUPENDO' | translate}}</p>
+
+            <img class="tam_icon"
+                 src="assets/icon/Estupendo.svg">
+        </ion-col>
+
+    </ion-row>
+    <ion-item class="btn_fondo">
+
+        <ion-range min="1"
+                   max="5"
+                   step="1"
+                   snaps="true"
+                   [(ngModel)]="satisfaccion"
+                   color="danger">
+
+        </ion-range>
+    </ion-item>
+    <ion-row center
+             class="">
+        <ion-col>
+            <button ion-button
+                    (click)="finalizarViaje()"
+                    id="btn_login"
+                    color="app_btn_login"
+                    class=" font_white style_btn">
+                {{'ACEPTAR' | translate}}
+            </button>
+        </ion-col>
+        <ion-col>
+            <button ion-button
+                    (click)="cerrarModal()"
+                    id="btn_login"
+                    color="font"
+                    class=" font_white style_btn">
+                {{'CANCELAR' | translate}}
+            </button>
+        </ion-col>
+    </ion-row>
 
 </ion-content>

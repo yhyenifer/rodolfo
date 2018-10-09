@@ -1,0 +1,41 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="13.819" height="13.819" viewBox="0 0 13.819 13.819">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffc533;
+      }
+
+      .cls-2 {
+        opacity: 0.1;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #fffdfd;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #fffdfd;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 0.75px;
+      }
+    </style>
+  </defs>
+  <title>Normal</title>
+  <g>
+    <path class="cls-1" d="M6.91,13.819A6.91,6.91,0,1,1,13.819,6.91,6.917,6.917,0,0,1,6.91,13.819Z"/>
+    <g class="cls-2">
+      <path class="cls-3" d="M6.91,4.762C.343,4.762.819,10.268.819,6.91A6.091,6.091,0,1,1,13,6.91C13,10.268,13.476,4.762,6.91,4.762Z"/>
+    </g>
+    <g>
+      <circle class="cls-4" cx="4.422" cy="5.75" r="1.149"/>
+      <circle class="cls-4" cx="9.397" cy="5.75" r="1.149"/>
+    </g>
+    <line class="cls-5" x1="5.298" y1="9.711" x2="8.52" y2="9.711"/>
+  </g>
+</svg>
