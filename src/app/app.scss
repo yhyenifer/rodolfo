@@ -476,6 +476,20 @@ ion-icon {
     border: 0;
     background-color: rgb(231, 236, 242);
 }
+.modalfinalizarviaje .modal-wrapper {
+    position: absolute;
+    overflow: hidden;
+    max-width: 400px;
+    width: 90%;
+    height: 50vh !important;
+    top: 2%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 0;
+    background-color: rgb(231, 236, 242);
+}
 
 .item-md.item-block .item-inner {
     border: none;
@@ -536,3 +550,20 @@ ion-icon {
 ion-backdrop {
     visibility: initial !important;
 }
+
+.range-md .range-knob-min.range-knob-min .range-knob {
+    border: 2px solid rgb(61, 71, 81);
+    background: rgb(61, 71, 81);
+ }
+ .range-ios .range-knob-min.range-knob-min .range-knob {
+    border: 2px solid rgb(61, 71, 81);
+    background: rgb(61, 71, 81);
+ }
+
+ .range-md-danger .range-knob, .range-md-danger .range-pin, .range-md-danger .range-pin::before {
+    background: rgb(61, 71, 81);
+ }
+
+ .range-md-danger .range-bar-active,{
+    background: #bdbdbd;
+ }

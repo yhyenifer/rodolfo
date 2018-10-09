@@ -1,0 +1,35 @@
+page-finalizar-viaje {
+    .no-scroll .scroll-content {
+        overflow: hidden;
+    }
+
+    .fondo {
+        background: rgb(238, 246, 255);
+    }
+
+    .range-md .range-tick {
+        margin-left: -1px;
+        border-radius: 50%;
+        position: absolute;
+        top: 17px;
+        z-index: 1;
+        width: 3px;
+        height: 10px;
+        background: #bdbdbd;
+        pointer-events: none;
+    }
+
+    .range-ios .range-tick {
+        margin-left: -1px;
+        border-radius: 50%;
+        position: absolute;
+        top: 17px;
+        z-index: 1;
+        width: 3px;
+        height: 10px;
+        background: #bdbdbd;
+        pointer-events: none;
+    }
+
+    
+}

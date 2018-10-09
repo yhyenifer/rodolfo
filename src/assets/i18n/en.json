@@ -50,7 +50,12 @@
     "QUIENESTACONTIGO": "¿Quién está contigo?_in",
     "UBICACION": "Ubicación_in",
     "CAMARA": "Cámara_in",
-    "GALERIA": "Galeria_in"
+    "GALERIA": "Galeria_in",
+
+    
+    "Comentario": "variables de finalizar viaje",
+    "TITULOFINALIZARVIAJE": "Finalizar viaje_in",
+    "INDICANOSESTADOANIMO": "Indicanos como la pasaste_in"
 
 
 

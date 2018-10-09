@@ -25,6 +25,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { MetasPageModule } from '../pages/metas/metas.module';
 import { NotificationPageModule } from '../pages/notification/notification.module';
 import { ContenidoPageModule } from '../pages/contenido/contenido.module';
+import { FinalizarViajePageModule } from '../pages/finalizar-viaje/finalizar-viaje.module';
 
 export function createTranslateLoader(http: HttpClient) {
 	return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -49,7 +50,8 @@ export function createTranslateLoader(http: HttpClient) {
 		MetasPageModule,
 		ContenidoPageModule,
 		IonicStorageModule.forRoot(),
-		NotificationPageModule
+		NotificationPageModule,
+		FinalizarViajePageModule
 	],
 	bootstrap: [ IonicApp ],
 	entryComponents: [

@@ -11,6 +11,7 @@ import { MyTravelsPage } from '../my-travels/my-travels';
 import { isRightSide } from 'ionic-angular/util/util';
 import { MetasPage } from '../metas/metas';
 import { ContenidoPage } from '../contenido/contenido';
+import { FinalizarViajePage } from '../finalizar-viaje/finalizar-viaje';
 
 /**
  * Generated class for the DetailTravelPage page.
@@ -183,6 +184,7 @@ export class DetailTravelPage {
 			contenido.seeTools = true;
 		}
 	}
+	//oculta la barra de herramientas por contenido
 	cerrarTools(contenido) {
 		if (!this.noClick) {
 			console.log('click');
@@ -194,4 +196,17 @@ export class DetailTravelPage {
 			}
 		}
 	}
+		// abre la modal que permite finalizar un viaje 
+		finalizarViaje() {
+			this.presentFinalizarViajeModal();
+		}
+		// crea la modal de finalizar un viaje 
+		presentFinalizarViajeModal() {
+			const myModalOptions: ModalOptions = {
+				enableBackdropDismiss: true,
+				cssClass: 'modalfinalizarviaje'
+			};
+			let profileModal = this.modalCtrl.create(FinalizarViajePage, {}, myModalOptions);
+			profileModal.present();
+		}
 }
