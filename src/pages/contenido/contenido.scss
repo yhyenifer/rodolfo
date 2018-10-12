@@ -9,6 +9,17 @@ page-contenido {
 
     .style_textarea {
         border-radius: 10px;
+        color: rgb(45, 61, 76);
+    }
+
+    .text-input-ios {
+        color: rgb(45, 61, 76);
+
+    }
+
+    .text-input-md {
+        color: rgb(45, 61, 76);
+
     }
 
     .tamFont {
@@ -50,5 +61,11 @@ page-contenido {
 
     .correrizq {
         margin-left: 10%
+    }
+
+    .posicion_btn {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
     }
 }

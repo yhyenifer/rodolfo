@@ -1,0 +1,56 @@
+page-comentario-contenido {
+    .no-scroll .scroll-content {
+        overflow: hidden;
+    }
+
+    .fondo {
+        background: rgb(238, 246, 255);
+    }
+
+    .style_textarea {
+        border-radius: 10px;
+    }
+
+    .text-input-ios {
+        color: rgb(45, 61, 76);
+
+    }
+
+    .text-input-md {
+        color: rgb(45, 61, 76);
+
+    }
+
+    .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+    .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+        box-shadow: none;
+    }
+
+    .style_btn {
+        border-radius: 40px;
+        width: 8em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    ion-list {
+        width: 100%;
+    }
+
+    .posicion_arriba {
+        margin-top: -20px;
+
+    }
+
+    .lista {
+        height: 122px;
+        overflow: auto;
+    }
+
+    .item-inner {
+        background: white;
+        border-radius: 10px;
+    }
+
+}

@@ -217,6 +217,18 @@ ion-icon {
         font-size: 34px;
     }
 
+    &[class*="gl-editarComentario"] {
+        mask-image: url(../assets/icon/editar_Comentario.svg);
+        color: rgb(45, 61, 76);
+        font-size: 24px;
+    }
+
+    &[class*="gl-eliminarComentario"] {
+        mask-image: url(../assets/icon/eliminar_Comentario.svg);
+        color: rgb(45, 61, 76);
+        font-size: 24px;
+    }
+
 
 
 
@@ -303,6 +315,10 @@ ion-icon {
 // colores de fuentes
 .font_black {
     color: rgb(61, 71, 81) !important;
+}
+
+.font_blue {
+    color: #1a75b1;
 }
 
 .font_white {
@@ -491,7 +507,37 @@ ion-icon {
     overflow: hidden;
     max-width: 400px;
     width: 90%;
-    height: 50vh !important;
+    height: 44vh !important;
+    top: 2%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 0;
+    background-color: rgb(231, 236, 242);
+}
+
+.modalcomentario .modal-wrapper {
+    position: absolute;
+    overflow: hidden;
+    max-width: 400px;
+    width: 90%;
+    height: 60vh !important;
+    top: 2%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 0;
+    background-color: rgb(231, 236, 242);
+}
+
+.modaletiquetados .modal-wrapper {
+    position: absolute;
+    overflow: hidden;
+    max-width: 400px;
+    width: 90%;
+    height: 60vh !important;
     top: 2%;
     bottom: 0;
     left: 0;

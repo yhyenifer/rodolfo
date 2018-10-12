@@ -5,8 +5,32 @@
   Ionic pages and navigation.
 -->
 
-
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            {{'NOTIFICACIONTITULO' | translate}}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
 
 <ion-content padding>
+    <ion-row>
+        <ion-list class="tamaño">
+            <ion-item class="borde_abajo">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/avatar/1.png">
+                </ion-avatar>
+                <h2 class="font_blue">Yenifer Hernandez</h2>
+            </ion-item>
+            <ion-item>
+                <ion-avatar item-start>
+                    <img class="tam_icon"
+                         src="assets/icon/Notificaciones-viajes.svg">
+                </ion-avatar>
+                <h2 class="font_blue">Mi Primer Viaje</h2>
+                <p class="salto_linea">Te recordamos que estas a 2 días de comenzar una gran aventura</p>
+            </ion-item>
+        </ion-list>
+    </ion-row>
 
 </ion-content>

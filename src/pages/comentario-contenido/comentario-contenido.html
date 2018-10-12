@@ -1,0 +1,60 @@
+<!--
+  Generated template for the ComentarioContenidoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content padding
+             class="fondo no-scroll ">
+
+    <ion-row>
+        <ion-col col-8>
+            <h1 class="aling_right font_black">{{'COMENTARIOSTITULO' | translate}}</h1>
+        </ion-col>
+        <ion-col col-4
+                 class="center"> <button class="btn_fondo paddin_aling"
+                    (click)="editarComentario()">
+                <ion-icon name="gl-editarComentario"></ion-icon>
+            </button> <button class="btn_fondo paddin_aling">
+                <ion-icon name="gl-eliminarComentario"></ion-icon>
+            </button>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="posicion_arriba">
+        <p>{{comentarioContenido}}</p>
+
+    </ion-row>
+    <ion-row class="lista">
+        <ion-list>
+            <ion-item class="btn_fondo">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/avatar/1.png">
+                </ion-avatar>
+                <p>comentario 1</p>
+            </ion-item>
+        </ion-list>
+    </ion-row>
+    <ion-row>
+        <ion-item class="style_textarea">
+
+            <ion-textarea placeholder="{{'AGREGACOMENTARIO' | translate }}"
+                          [(ngModel)]="nuevoComentarioContenido"></ion-textarea>
+        </ion-item>
+    </ion-row>
+    <ion-row center
+             class="">
+        <ion-col>
+            <button ion-button
+                    (click)="agregarComentario()"
+                    id="btn_login"
+                    color="app_btn_login"
+                    class=" font_white style_btn">
+                {{'ACEPTAR' | translate}}
+            </button>
+        </ion-col>
+    </ion-row>
+</ion-content>

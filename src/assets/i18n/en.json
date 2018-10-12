@@ -62,7 +62,18 @@
     "ABURRIDO": "Bored",
     "NORMAL": "Normal",
     "FELIZ": "Happy",
-    "ESTUPENDO": "Super"
+    "ESTUPENDO": "Super",
+
+
+    "Comentario": "variables de comentarios",
+    "COMENTARIOSTITULO": "Comments",
+    "AGREGACOMENTARIO": "Agregar comentario_in",
+
+    "Comentario": "variables de etiquetados",
+    "ETIQUETADOSTITULO": "Etiquetados_in",
+
+    "Comentario": "variables de notificaciones",
+    "NOTIFICACIONTITULO": "Notificaciones_in"
 
 
 

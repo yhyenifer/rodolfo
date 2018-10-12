@@ -1,3 +1,20 @@
 page-notification {
 
+    .item-md ion-avatar ion-img,
+    .item-md ion-avatar img {
+        border-radius: 20%;
+    }
+
+    .tamaño {
+        width: 100%;
+    }
+
+    .borde_abajo {
+        border-bottom: 1px solid #bdbdbd;
+    }
+
+    .salto_linea {
+        white-space: initial;
+    }
+
 }

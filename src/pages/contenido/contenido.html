@@ -14,7 +14,7 @@
         <ion-col>
             <button ion-fab
                     (click)="abrirGaleria()"
-                    class="fondo_blanco flotarder correrder">
+                    class="fondo_blanco posicion_btn ">
 
                 <img class="tam_icon"
                      src="assets/icon/Galeria.svg">
@@ -23,10 +23,20 @@
         <ion-col>
             <button ion-fab
                     (click)="abrirCamara()"
-                    class="fondo_blanco flotarizrq correrizq">
+                    class="fondo_blanco  posicion_btn">
 
                 <img class="tam_icon"
                      src="assets/icon/Camara.svg">
+
+            </button>
+        </ion-col>
+        <ion-col>
+            <button ion-fab
+                    (click)="abrirCamaraVideo()"
+                    class="fondo_blanco  posicion_btn">
+
+                <img class="tam_icon"
+                     src="assets/icon/Video_Video.svg">
 
             </button>
         </ion-col>
@@ -40,9 +50,9 @@
                       class="deleteIcon"
                       (click)="eliminarFoto(id)"></ion-icon>
             <!-- src="assets/imgs/misviajes/selfie4.jpeg" -->
-            <img class="tamañoDeterminado"
+            <!-- <img class="tamañoDeterminado"
                  [src]="item"
-                 *ngIf="item">
+                 *ngIf="item"> -->
         </ion-col>
 
     </ion-row>

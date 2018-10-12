@@ -1,18 +1,117 @@
 <!--
-  Generated template for the TravelsPage page.
+  Generated template for the MyTravelsPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>travels</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-row>
+
+            <ion-col col-8>
+                <img class="tamImg btn_icon"
+                     src="assets/imgs/logo.svg">
+            </ion-col>
+            <ion-col col-4
+                     class="aling_right">
+                <button class="btn_icon"
+                        (click)="showSearch()">
+                    <ion-icon name="gl-lupa"></ion-icon>
+                </button>
+                <button class="btn_icon">
+                    <ion-icon name="gl-album"></ion-icon>
+                </button>
+            </ion-col>
+
+        </ion-row>
+
+    </ion-navbar>
 
 </ion-header>
+<ion-content class="fondonMyTravels">
+    <ion-searchbar #buscar
+                   mode="md"
+                   class="animated fadeInDown"
+                   [hidden]="!seeSearch"
+                   placeholder="{{'BUSCAR' | translate }}"></ion-searchbar>
+
+    <ion-card *ngFor="let viaje of viajes"
+              class="fondoOpaco">
+        <ion-card-header>
+            <ion-col class="degrade">
+
+            </ion-col>
+            <ion-col class="opcionesCard">
+                <button class="btn_fondo">
+                    <img class="tam_icon"
+                         src="assets/icon/Normal.svg">
+                </button>
+                <button class="btn_fondo"
+                        *ngIf="viaje.state ==1">
+                    <ion-icon name="gl-en-progreso"></ion-icon>
+                </button>
+                <button class="btn_fondo"
+                        *ngIf="viaje.state ==0">
+                    <ion-icon name="gl-finalizar"></ion-icon>
+                </button>
+                <button class="btn_fondo"
+                        (click)="showBarrTools(viaje)">
+                    <ion-icon name="gl-opciones"></ion-icon>
+                </button>
+
+            </ion-col>
+
+        </ion-card-header>
+
+        <img [src]="viaje.imagen"
+             (click)="seleccionViaje(viaje)"
+             (press)="presionado(viaje)" />
+        <!-- barra de herramientas por carta pulse-->
+        <ion-card-header class=" btn_fondo animated  "
+                         [ngClass]="efecto"
+                         *ngIf="viaje.seeTools">
+            <ion-col>
+                <button class="btn_fondo paddin_aling"
+                        (click)="showSearch()">
+                    <ion-icon name="gl-btn-editar"></ion-icon>
+                </button>
+                <button class="btn_fondo paddin_aling"
+                        (click)="showSearch()">
+                    <ion-icon name="gl-btn-comentarios"></ion-icon>
+                </button>
+                <button class="btn_fondo paddin_aling">
+                    <ion-icon name="gl-btn-etiquetados"></ion-icon>
+                </button>
+                <button class="btn_fondo paddin_aling"
+                        (click)="showSearch()">
+                    <ion-icon name="gl-btn-finalizar"></ion-icon>
+                </button>
+                <button class="btn_fondo paddin_aling"
+                        (click)="showSearch()">
+                    <ion-icon name="gl-btn-compartir"></ion-icon>
+                </button>
+            </ion-col>
+        </ion-card-header>
+
+        <ion-card-content class="fondTitleCard">
+
+            <ion-card-title class="titleCard">
+                {{viaje.usuario}} - {{viaje.ubicacion}}
+            </ion-card-title>
 
 
-<ion-content padding>
+        </ion-card-content>
+    </ion-card>
 
+    <ion-fab bottom
+             right>
+        <button ion-fab
+                (click)="abrirNuevoViaje()"
+                class="fondo_verde">
+            <!-- <ion-icon name="add"></ion-icon> -->
+            <img class="tam_icon"
+                 src="assets/icon/Agregar-contenido_Agregar contenido.svg">
+        </button>
+    </ion-fab>
 </ion-content>

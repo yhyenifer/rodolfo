@@ -12,6 +12,8 @@ import { isRightSide } from 'ionic-angular/util/util';
 import { MetasPage } from '../metas/metas';
 import { ContenidoPage } from '../contenido/contenido';
 import { FinalizarViajePage } from '../finalizar-viaje/finalizar-viaje';
+import { ComentarioContenidoPage } from '../comentario-contenido/comentario-contenido';
+import { EtiquetadosPage } from '../etiquetados/etiquetados';
 
 /**
  * Generated class for the DetailTravelPage page.
@@ -78,7 +80,8 @@ export class DetailTravelPage {
 					id: 1,
 					viaje: 2,
 					imagen: 'assets/imgs/misviajes/selfie2.jpeg',
-					coment: 'Quindío lleno de cosas lindas',
+					coment:
+						'Quindío lleno de cosas lindas Quindío lleno de cosas lindas Quindío lleno de cosas lindas Quindío lleno de cosas lindas Quindío lleno de cosas lindas Quindío lleno de cosas lindas Quindío lleno de cosas lindas',
 					state: 1,
 					seeTools: false,
 					dia: 1,
@@ -222,5 +225,41 @@ export class DetailTravelPage {
 
 	editarContenido(contenido) {
 		this.presentContenidoModal(contenido.tipo, contenido);
+	}
+
+	// abre la modal que permite ver y agraegar comentario de un cotenido
+	comentarioContenido(contenido) {
+		this.presentComentarioContenidoModal(contenido);
+	}
+	// crea la modal de ver y agregar comentario de un cotenido
+	presentComentarioContenidoModal(contenido) {
+		const myModalOptions: ModalOptions = {
+			enableBackdropDismiss: true,
+			cssClass: 'modalcomentario'
+		};
+		let profileModal = this.modalCtrl.create(
+			ComentarioContenidoPage,
+			{ contenido: contenido },
+			myModalOptions
+		);
+		profileModal.present();
+	}
+
+	// abre la modal que permite ver y agraegar etiquetados
+	etiquetados(contenido) {
+		this.presentEtiquetadosModal(contenido);
+	}
+	// crea la modal de ver y agregar etiquetados
+	presentEtiquetadosModal(contenido) {
+		const myModalOptions: ModalOptions = {
+			enableBackdropDismiss: true,
+			cssClass: 'modaletiquetados'
+		};
+		let profileModal = this.modalCtrl.create(
+			EtiquetadosPage,
+			{ contenido: contenido },
+			myModalOptions
+		);
+		profileModal.present();
 	}
 }

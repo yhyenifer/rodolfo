@@ -28,9 +28,19 @@ import { ContenidoPageModule } from '../pages/contenido/contenido.module';
 import { FinalizarViajePageModule } from '../pages/finalizar-viaje/finalizar-viaje.module';
 
 import { Camera } from '@ionic-native/camera';
+import { ComentarioContenidoPageModule } from '../pages/comentario-contenido/comentario-contenido.module';
 export function createTranslateLoader(http: HttpClient) {
 	return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
+
+import {
+	MediaCapture,
+	MediaFile,
+	CaptureError,
+	CaptureImageOptions
+} from '@ionic-native/media-capture';
+import { EtiquetadosPageModule } from '../pages/etiquetados/etiquetados.module';
+import { TravelsPageModule } from '../pages/travels/travels.module';
 
 @NgModule({
 	declarations: [ MyApp, AboutPage, ContactPage, HomePage, TabsPage, MyTravelsPage, LoginPage ],
@@ -52,7 +62,10 @@ export function createTranslateLoader(http: HttpClient) {
 		ContenidoPageModule,
 		IonicStorageModule.forRoot(),
 		NotificationPageModule,
-		FinalizarViajePageModule
+		FinalizarViajePageModule,
+		ComentarioContenidoPageModule,
+		EtiquetadosPageModule,
+		TravelsPageModule
 	],
 	bootstrap: [ IonicApp ],
 	entryComponents: [
@@ -68,7 +81,8 @@ export function createTranslateLoader(http: HttpClient) {
 		StatusBar,
 		SplashScreen,
 		{ provide: ErrorHandler, useClass: IonicErrorHandler },
-		Camera
+		Camera,
+		MediaCapture
 	]
 })
 export class AppModule {}

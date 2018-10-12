@@ -61,7 +61,18 @@
     "ABURRIDO": "Aburrido",
     "NORMAL": "Normal",
     "FELIZ": "Feliz",
-    "ESTUPENDO": "Estupendo"
+    "ESTUPENDO": "Estupendo",
+
+
+    "Comentario": "variables de comentarios",
+    "COMENTARIOSTITULO": "Comentarios",
+    "AGREGACOMENTARIO": "Agregar comentario",
+
+    "Comentario": "variables de etiquetados",
+    "ETIQUETADOSTITULO": "Etiquetados",
+
+    "Comentario": "variables de notificaciones",
+    "NOTIFICACIONTITULO": "Notificaciones"
 
 
 
