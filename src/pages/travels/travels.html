@@ -19,9 +19,7 @@
                         (click)="showSearch()">
                     <ion-icon name="gl-lupa"></ion-icon>
                 </button>
-                <button class="btn_icon">
-                    <ion-icon name="gl-album"></ion-icon>
-                </button>
+
             </ion-col>
 
         </ion-row>
@@ -39,9 +37,7 @@
     <ion-card *ngFor="let viaje of viajes"
               class="fondoOpaco">
         <ion-card-header>
-            <ion-col class="degrade">
 
-            </ion-col>
             <ion-col class="opcionesCard">
                 <button class="btn_fondo">
                     <img class="tam_icon"
@@ -55,18 +51,14 @@
                         *ngIf="viaje.state ==0">
                     <ion-icon name="gl-finalizar"></ion-icon>
                 </button>
-                <button class="btn_fondo"
-                        (click)="showBarrTools(viaje)">
-                    <ion-icon name="gl-opciones"></ion-icon>
-                </button>
+
 
             </ion-col>
 
         </ion-card-header>
 
         <img [src]="viaje.imagen"
-             (click)="seleccionViaje(viaje)"
-             (press)="presionado(viaje)" />
+             (click)="seleccionViaje(viaje)" />
         <!-- barra de herramientas por carta pulse-->
         <ion-card-header class=" btn_fondo animated  "
                          [ngClass]="efecto"
@@ -95,8 +87,10 @@
         </ion-card-header>
 
         <ion-card-content class="fondTitleCard">
+            <ion-col class="degrade degrade_abajo">
 
-            <ion-card-title class="titleCard">
+            </ion-col>
+            <ion-card-title class="titleCard titleViajes">
                 {{viaje.usuario}} - {{viaje.ubicacion}}
             </ion-card-title>
 
@@ -104,14 +98,5 @@
         </ion-card-content>
     </ion-card>
 
-    <ion-fab bottom
-             right>
-        <button ion-fab
-                (click)="abrirNuevoViaje()"
-                class="fondo_verde">
-            <!-- <ion-icon name="add"></ion-icon> -->
-            <img class="tam_icon"
-                 src="assets/icon/Agregar-contenido_Agregar contenido.svg">
-        </button>
-    </ion-fab>
+
 </ion-content>

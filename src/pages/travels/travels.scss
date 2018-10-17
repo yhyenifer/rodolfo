@@ -11,8 +11,13 @@ page-travels {
     }
 
     .degrade {
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 0%);
         position: absolute;
-        height: 80px;
+        height: 47px;
+        top: 48vw;
+    }
+
+    .titleViajes {
+        text-align: left;
     }
 }

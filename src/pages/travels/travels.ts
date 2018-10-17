@@ -56,6 +56,15 @@ export class TravelsPage {
 				imagen: 'assets/imgs/misviajes/otrosviajes1.jpeg',
 				state: '1',
 				seeTools: false
+			},
+			{
+				id: 2,
+				nombre: 'viajando',
+				ubicacion: 'Perú',
+				usuario: 'Jean',
+				imagen: 'assets/imgs/misviajes/otrosviajes1.jpeg',
+				state: '1',
+				seeTools: false
 			}
 		];
 		// almacena dentro del arreglo el viaje creado

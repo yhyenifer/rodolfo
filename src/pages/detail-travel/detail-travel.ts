@@ -127,6 +127,7 @@ export class DetailTravelPage {
 		if (this.contenido.length == 0) {
 			this.efecto = 'infinite';
 			this.viaje.imagen = 'assets/imgs/admin/default.jpg';
+			this.verLinea = 'display_no';
 		} else {
 			this.efecto = '';
 			this.verLinea = 'display_no';

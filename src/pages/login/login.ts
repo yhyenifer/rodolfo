@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, ModalOptions } from 'ionic-angular';
 import { MyTravelsPage } from '../my-travels/my-travels';
 import { TranslateService } from '@ngx-translate/core';
 import { Pipe, PipeTransform } from '@angular/core';
 import { SingInPage } from '../sing-in/sing-in';
 import { TabsPage } from '../tabs/tabs';
 import { Storage } from '@ionic/storage';
+import { CrearCuentaPage } from '../crear-cuenta/crear-cuenta';
 
 /**
  * Generated class for the LoginPage page.
@@ -62,8 +63,24 @@ export class LoginPage {
 	//acceso mediante cuenta propia de la aplicacion
 	login() {
 		this.storage.set('nombreUsuario', 'Yenifer');
+		const myModalOptions: ModalOptions = {
+			enableBackdropDismiss: true,
+			cssClass: 'modalLogin'
+		};
+		let modalPage = this.modalCtrl.create(SingInPage, {}, myModalOptions);
 
-		var modalPage = this.modalCtrl.create('SingInPage');
+		modalPage.present();
+		//this.navCtrl.setRoot(SingInPage);
+	}
+	//acceso mediante cuenta propia de la aplicacion
+	crearCuenta() {
+		this.storage.set('nombreUsuario', 'Yenifer');
+		const myModalOptions: ModalOptions = {
+			enableBackdropDismiss: true,
+			cssClass: 'modalCrear'
+		};
+		let modalPage = this.modalCtrl.create(CrearCuentaPage, {}, myModalOptions);
+
 		modalPage.present();
 		//this.navCtrl.setRoot(SingInPage);
 	}

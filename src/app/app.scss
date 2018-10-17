@@ -472,6 +472,10 @@ ion-icon {
     margin: 0 0;
 }
 
+.modalmetas ion-backdrop {
+    visibility: initial !important;
+}
+
 .modalmetas .modal-wrapper {
     position: absolute;
     overflow: hidden;
@@ -485,6 +489,10 @@ ion-icon {
     margin: auto;
     border: 0;
     background-color: rgb(231, 236, 242);
+}
+
+.modalcontenido ion-backdrop {
+    visibility: initial !important;
 }
 
 .modalcontenido .modal-wrapper {
@@ -502,6 +510,10 @@ ion-icon {
     background-color: rgb(231, 236, 242);
 }
 
+.modalfinalizarviaje ion-backdrop {
+    visibility: initial !important;
+}
+
 .modalfinalizarviaje .modal-wrapper {
     position: absolute;
     overflow: hidden;
@@ -517,6 +529,10 @@ ion-icon {
     background-color: rgb(231, 236, 242);
 }
 
+.modalcomentario ion-backdrop {
+    visibility: initial !important;
+}
+
 .modalcomentario .modal-wrapper {
     position: absolute;
     overflow: hidden;
@@ -530,6 +546,10 @@ ion-icon {
     margin: auto;
     border: 0;
     background-color: rgb(231, 236, 242);
+}
+
+.modaletiquetados ion-backdrop {
+    visibility: initial !important;
 }
 
 .modaletiquetados .modal-wrapper {
@@ -603,9 +623,11 @@ ion-icon {
     margin: 0 8px;
 }
 
-ion-backdrop {
-    visibility: initial !important;
+.modalLogin ion-backdrop {
+    visibility: hidden !important;
 }
+
+
 
 .range-md .range-knob-min.range-knob-min .range-knob {
     border: 2px solid rgb(61, 71, 81);
@@ -627,3 +649,21 @@ ion-backdrop {
     {
     background: #bdbdbd;
 }
+
+.imagen_avatar {
+    padding: 5px !important;
+}
+
+.padding_comentario {
+    padding: 4px;
+}
+
+.padding_txt {
+    padding: 0px 5px;
+}
+
+.font_black .text-input-md {
+    color: rgb(61, 71, 81) !important;
+}
+
+.degrade_abajo {}

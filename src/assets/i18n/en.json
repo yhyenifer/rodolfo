@@ -73,7 +73,11 @@
     "ETIQUETADOSTITULO": "Etiquetados_in",
 
     "Comentario": "variables de notificaciones",
-    "NOTIFICACIONTITULO": "Notificaciones_in"
+    "NOTIFICACIONTITULO": "Notificaciones_in",
+
+
+    "Comentario": "variables de crear cuenta",
+    "CUENTA": "Account"
 
 
 

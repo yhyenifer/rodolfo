@@ -27,20 +27,25 @@
         </ion-col>
     </ion-row>
 
-    <ion-item class="fondo_input borde txt">
+    <ion-item class="fondo_input borde txt ">
 
-        <ion-input placeholder="{{'CORREO' | translate}}"></ion-input>
+        <ion-input class="font_black"
+                   placeholder="{{'CORREO' | translate}}"
+                   [(ngModel)]="correo"></ion-input>
     </ion-item>
 
     <ion-item id="pass"
               class="fondo_input borde txt">
         <ion-input placeholder="{{'CONTRASENA' | translate}}"
-                   type="password"></ion-input>
+                   type="password"
+                   [(ngModel)]="contrasena"
+                   class="font_black"></ion-input>
     </ion-item>
 
 
     <ion-row>
         <button ion-button
+                (click)="iniciarSesion()"
                 id="btn_login"
                 color="app_btn_login"
                 class="btn_full font_white ">

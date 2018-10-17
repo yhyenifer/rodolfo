@@ -41,6 +41,7 @@ import {
 } from '@ionic-native/media-capture';
 import { EtiquetadosPageModule } from '../pages/etiquetados/etiquetados.module';
 import { TravelsPageModule } from '../pages/travels/travels.module';
+import { CrearCuentaPageModule } from '../pages/crear-cuenta/crear-cuenta.module';
 
 @NgModule({
 	declarations: [ MyApp, AboutPage, ContactPage, HomePage, TabsPage, MyTravelsPage, LoginPage ],
@@ -65,7 +66,8 @@ import { TravelsPageModule } from '../pages/travels/travels.module';
 		FinalizarViajePageModule,
 		ComentarioContenidoPageModule,
 		EtiquetadosPageModule,
-		TravelsPageModule
+		TravelsPageModule,
+		CrearCuentaPageModule
 	],
 	bootstrap: [ IonicApp ],
 	entryComponents: [
