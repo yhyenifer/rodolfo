@@ -1,0 +1,16 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="13.82" height="13.82" viewBox="0 0 13.82 13.82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>Activos_Final_app_trip</title>
+  <g>
+    <path class="cls-1" d="M6.91,0a6.91,6.91,0,1,0,6.91,6.91A6.92,6.92,0,0,0,6.91,0Zm0,13.2A6.29,6.29,0,1,1,13.2,6.91,6.29,6.29,0,0,1,6.91,13.2Z"/>
+    <path class="cls-1" d="M5.63,5.8a1.1,1.1,0,1,0-1.1,1.1A1.1,1.1,0,0,0,5.63,5.8Z"/>
+    <path class="cls-1" d="M9.29,4.7a1.1,1.1,0,1,0,1.09,1.1A1.1,1.1,0,0,0,9.29,4.7Z"/>
+    <path class="cls-1" d="M6.91,7.84a2.63,2.63,0,0,0-2.63,2.63v.08H9.54v-.08A2.63,2.63,0,0,0,6.91,7.84Z"/>
+  </g>
+</svg>

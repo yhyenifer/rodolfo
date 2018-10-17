@@ -39,27 +39,50 @@
         <ion-card-header>
 
             <ion-col class="opcionesCard">
-                <button class="btn_fondo">
-                    <img class="tam_icon"
-                         src="assets/icon/Normal.svg">
-                </button>
-                <button class="btn_fondo"
-                        *ngIf="viaje.state ==1">
-                    <ion-icon name="gl-en-progreso"></ion-icon>
-                </button>
-                <button class="btn_fondo"
-                        *ngIf="viaje.state ==0">
-                    <ion-icon name="gl-finalizar"></ion-icon>
-                </button>
+
 
 
             </ion-col>
 
         </ion-card-header>
+        <div class="relativo">
+            <img [src]="viaje.imagen"
+                 (click)="seleccionViaje(viaje)" />
+            <!-- barra de herramientas por carta pulse-->
+            <ion-col class="degrade ">
+                <button class="btn_fondo flotarizrq"
+                        *ngIf="viaje.seguir== 0"
+                        (click)="seguir(viaje)">
+                    <ion-icon name="gl-seguir"></ion-icon>
 
-        <img [src]="viaje.imagen"
-             (click)="seleccionViaje(viaje)" />
-        <!-- barra de herramientas por carta pulse-->
+                </button>
+                <button class="btn_fondo flotarizrq"
+                        *ngIf="viaje.seguir== 1"
+                        (click)="dejarDeSeguir(viaje)">
+                    <ion-icon class="font_rosa"
+                              name="gl-siguiendo"></ion-icon>
+
+                </button>
+
+
+
+                <button class="btn_fondo flotarder"
+                        *ngIf="viaje.state ==1">
+                    <ion-icon class="procesoViajes"
+                              name="gl-en-progreso"></ion-icon>
+                </button>
+                <button class="btn_fondo flotarder"
+                        *ngIf="viaje.state ==0">
+                    <ion-icon name="gl-finalizado"></ion-icon>
+                </button>
+                <button class="btn_fondo flotarder">
+                    <img class="tam_icon"
+                         src="assets/icon/Normal-2.svg">
+                </button>
+            </ion-col>
+        </div>
+
+
         <ion-card-header class=" btn_fondo animated  "
                          [ngClass]="efecto"
                          *ngIf="viaje.seeTools">
@@ -83,13 +106,14 @@
                         (click)="showSearch()">
                     <ion-icon name="gl-btn-compartir"></ion-icon>
                 </button>
+
             </ion-col>
+
+
         </ion-card-header>
 
         <ion-card-content class="fondTitleCard">
-            <ion-col class="degrade degrade_abajo">
 
-            </ion-col>
             <ion-card-title class="titleCard titleViajes">
                 {{viaje.usuario}} - {{viaje.ubicacion}}
             </ion-card-title>

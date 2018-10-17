@@ -12,9 +12,9 @@ import { TravelsPage } from '../travels/travels';
 })
 export class TabsPage {
 	tab1Root = ContactPage;
-	tab2Root = MyTravelsPage;
+	tab2Root = TravelsPage;
 	tab3Root = NotificationPage;
-	tab4Root = TravelsPage;
+	tab4Root = MyTravelsPage;
 	tab5Root = ContactPage;
 
 	constructor() {}

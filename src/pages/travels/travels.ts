@@ -34,6 +34,7 @@ export class TravelsPage {
 		usuario: String;
 		imagen: String;
 		state: String;
+		seguir: String;
 		seeTools: Boolean;
 	}>;
 
@@ -54,7 +55,8 @@ export class TravelsPage {
 				ubicacion: 'Japon',
 				usuario: 'Jorge',
 				imagen: 'assets/imgs/misviajes/otrosviajes1.jpeg',
-				state: '1',
+				state: '0',
+				seguir: '0',
 				seeTools: false
 			},
 			{
@@ -64,6 +66,7 @@ export class TravelsPage {
 				usuario: 'Jean',
 				imagen: 'assets/imgs/misviajes/otrosviajes1.jpeg',
 				state: '1',
+				seguir: '1',
 				seeTools: false
 			}
 		];
@@ -126,4 +129,12 @@ export class TravelsPage {
 		this.navCtrl.push(NewTravelPage);
 	}
 	ionViewDidLoad() {}
+
+	seguir(viaje) {
+		viaje.seguir = '1';
+	}
+
+	dejarDeSeguir(viaje) {
+		viaje.seguir = '0';
+	}
 }

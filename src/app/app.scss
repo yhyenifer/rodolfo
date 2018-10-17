@@ -229,6 +229,24 @@ ion-icon {
         font-size: 24px;
     }
 
+    &[class*="gl-seguir"] {
+        mask-image: url(../assets/icon/Seguir.svg);
+        color: #fff;
+        font-size: 26px;
+    }
+
+    &[class*="gl-siguiendo"] {
+        mask-image: url(../assets/icon/Siguiendo.svg);
+        color: #ff4159;
+        font-size: 26px;
+    }
+
+    &[class*="gl-finalizado"] {
+        mask-image: url(../assets/icon/finalizado.svg);
+        color: #fff;
+        font-size: 26px;
+    }
+
 
 
 
@@ -323,6 +341,10 @@ ion-icon {
 
 .font_white {
     color: white;
+}
+
+.font_rosa {
+    color: rgb(219, 44, 66);
 }
 
 .font_green {
