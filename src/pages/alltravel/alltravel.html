@@ -1,0 +1,36 @@
+<!--
+  Generated template for the AlltravelPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-col col-8>
+            <img class="tamImg btn_icon"
+                 src="assets/imgs/logo.svg">
+        </ion-col>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="fondonMyTravels">
+    <ion-searchbar #buscar
+                   mode="md"
+                   class="animated fadeInDown"
+                   [hidden]="!seeSearch"
+                   placeholder="{{'BUSCAR' | translate }}"></ion-searchbar>
+
+    <ion-row>
+        <ion-col col-4
+                 class=""
+                 *ngFor="let viaje of viajes">
+            <ion-card class="">
+                <img class="img-carta"
+                     [src]="viaje.imagen" />
+            </ion-card>
+        </ion-col>
+    </ion-row>
+</ion-content>

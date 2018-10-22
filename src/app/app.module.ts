@@ -42,6 +42,7 @@ import {
 import { EtiquetadosPageModule } from '../pages/etiquetados/etiquetados.module';
 import { TravelsPageModule } from '../pages/travels/travels.module';
 import { CrearCuentaPageModule } from '../pages/crear-cuenta/crear-cuenta.module';
+import { AlltravelPageModule } from '../pages/alltravel/alltravel.module';
 
 @NgModule({
 	declarations: [ MyApp, AboutPage, ContactPage, HomePage, TabsPage, MyTravelsPage, LoginPage ],
@@ -67,7 +68,8 @@ import { CrearCuentaPageModule } from '../pages/crear-cuenta/crear-cuenta.module
 		ComentarioContenidoPageModule,
 		EtiquetadosPageModule,
 		TravelsPageModule,
-		CrearCuentaPageModule
+		CrearCuentaPageModule,
+		AlltravelPageModule
 	],
 	bootstrap: [ IonicApp ],
 	entryComponents: [

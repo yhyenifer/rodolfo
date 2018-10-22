@@ -223,7 +223,7 @@ export class DetailTravelPage {
 		let profileModal = this.modalCtrl.create(FinalizarViajePage, {}, myModalOptions);
 		profileModal.present();
 	}
-
+	// abre la modal de contenido para su edicion
 	editarContenido(contenido) {
 		this.presentContenidoModal(contenido.tipo, contenido);
 	}

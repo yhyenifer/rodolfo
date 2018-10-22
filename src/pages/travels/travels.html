@@ -28,57 +28,59 @@
 
 </ion-header>
 <ion-content class="fondonMyTravels">
-    <ion-searchbar #buscar
-                   mode="md"
-                   class="animated fadeInDown"
-                   [hidden]="!seeSearch"
-                   placeholder="{{'BUSCAR' | translate }}"></ion-searchbar>
+
 
     <ion-card *ngFor="let viaje of viajes"
               class="fondoOpaco">
-        <ion-card-header>
 
-            <ion-col class="opcionesCard">
-
-
-
-            </ion-col>
-
-        </ion-card-header>
         <div class="relativo">
             <img [src]="viaje.imagen"
                  (click)="seleccionViaje(viaje)" />
-            <!-- barra de herramientas por carta pulse-->
+            <!-- barra de herramientas por carta-->
             <ion-col class="degrade ">
-                <button class="btn_fondo flotarizrq"
-                        *ngIf="viaje.seguir== 0"
-                        (click)="seguir(viaje)">
-                    <ion-icon name="gl-seguir"></ion-icon>
+                <!-- boton de los pies para seguir -->
+                <ion-row>
+                    <button class="btn_fondo flotarizrq"
+                            *ngIf="viaje.seguir== 0"
+                            (click)="seguir(viaje)">
+                        <ion-icon name="gl-seguir"></ion-icon>
 
-                </button>
-                <button class="btn_fondo flotarizrq"
-                        *ngIf="viaje.seguir== 1"
-                        (click)="dejarDeSeguir(viaje)">
-                    <ion-icon class="font_rosa"
-                              name="gl-siguiendo"></ion-icon>
+                    </button>
+                    <!-- boton de los corazon para los que ya estoy siguiendo -->
+                    <button class="btn_fondo flotarizrq"
+                            *ngIf="viaje.seguir== 1"
+                            (click)="dejarDeSeguir(viaje)">
+                        <ion-icon class="font_rosa"
+                                  name="gl-siguiendo"></ion-icon>
 
-                </button>
+                    </button>
 
+                    <ion-avatar class="tamaño-avatar">
+                        <img class="avatar-borde"
+                             [src]="viaje.avatar">
+                    </ion-avatar>
 
+                    <ion-label class="label-usuario">
+                        {{viaje.usuario}}
+                    </ion-label>
+                    <!-- indica el nivel de satisfaccion de la persona en el viaje una vez lo finalizo -->
+                    <button class="btn_fondo flotarder"
+                            *ngIf="viaje.state ==0">
+                        <img class="tam_icon"
+                             src="assets/icon/Normal-2.svg">
+                    </button>
+                    <!-- indica el estado del ciaje, si esta en proceso o ya se finalizo -->
+                    <button class="btn_fondo flotarder"
+                            *ngIf="viaje.state ==1">
+                        <ion-icon class="procesoViajes"
+                                  name="gl-en-progreso"></ion-icon>
+                    </button>
+                    <button class="btn_fondo flotarder"
+                            *ngIf="viaje.state ==0">
+                        <ion-icon name="gl-finalizado"></ion-icon>
+                    </button>
 
-                <button class="btn_fondo flotarder"
-                        *ngIf="viaje.state ==1">
-                    <ion-icon class="procesoViajes"
-                              name="gl-en-progreso"></ion-icon>
-                </button>
-                <button class="btn_fondo flotarder"
-                        *ngIf="viaje.state ==0">
-                    <ion-icon name="gl-finalizado"></ion-icon>
-                </button>
-                <button class="btn_fondo flotarder">
-                    <img class="tam_icon"
-                         src="assets/icon/Normal-2.svg">
-                </button>
+                </ion-row>
             </ion-col>
         </div>
 
@@ -113,10 +115,19 @@
         </ion-card-header>
 
         <ion-card-content class="fondTitleCard">
+            <div class="flotarder">
+                <ion-icon class="icon-blanco   posicion-derecha-icon"
+                          name="gl-btn-comentarios"></ion-icon>
+                <ion-icon class="icon-blanco   posicion-derecha-icon"
+                          name="gl-btn-etiquetados"></ion-icon>
+
+            </div>
+
 
             <ion-card-title class="titleCard titleViajes">
-                {{viaje.usuario}} - {{viaje.ubicacion}}
+                {{viaje.nombre}}
             </ion-card-title>
+
 
 
         </ion-card-content>

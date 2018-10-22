@@ -5,6 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { TabsPage } from '../../pages/tabs/tabs';
 import { NewTravelPage } from '../new-travel/new-travel';
 import { DetailTravelPage } from '../detail-travel/detail-travel';
+import { AlltravelPage } from '../alltravel/alltravel';
 /**
  * Generated class for the TravelsPage page.
  *
@@ -35,6 +36,9 @@ export class TravelsPage {
 		imagen: String;
 		state: String;
 		seguir: String;
+		avatar: String;
+		fecha: String;
+		fechaFinViaje: String;
 		seeTools: Boolean;
 	}>;
 
@@ -57,6 +61,9 @@ export class TravelsPage {
 				imagen: 'assets/imgs/misviajes/otrosviajes1.jpeg',
 				state: '0',
 				seguir: '0',
+				avatar: 'assets/imgs/avatar/1.png',
+				fecha: '2018-10-01',
+				fechaFinViaje: '2018-10-12',
 				seeTools: false
 			},
 			{
@@ -67,6 +74,35 @@ export class TravelsPage {
 				imagen: 'assets/imgs/misviajes/otrosviajes1.jpeg',
 				state: '1',
 				seguir: '1',
+				avatar: 'assets/imgs/avatar/2.jpg',
+				fecha: '2018-10-01',
+				fechaFinViaje: '',
+				seeTools: false
+			},
+			{
+				id: 3,
+				nombre: 'contigo',
+				ubicacion: 'Colombia',
+				usuario: 'Vane',
+				imagen: 'assets/imgs/misviajes/otrosviajes2.jpeg',
+				state: '1',
+				seguir: '0',
+				avatar: 'assets/imgs/avatar/3.jpg',
+				fecha: '2018-10-30',
+				fechaFinViaje: '',
+				seeTools: false
+			},
+			{
+				id: 4,
+				nombre: 'De rumbo a casa',
+				ubicacion: 'Africa',
+				usuario: 'Gio',
+				imagen: 'assets/imgs/misviajes/otrosviajes3.jpeg',
+				state: '0',
+				seguir: '0',
+				avatar: 'assets/imgs/avatar/4.jpg',
+				fecha: '2018-09-10',
+				fechaFinViaje: '2018-10-11',
 				seeTools: false
 			}
 		];
@@ -80,11 +116,13 @@ export class TravelsPage {
 
 	// muestra la barra de busqueda
 	showSearch() {
-		if (this.seeSearch) {
-			this.seeSearch = false;
-		} else {
-			this.seeSearch = true;
-		}
+		this.seeSearch = true;
+		this.navCtrl.push(AlltravelPage, { verBuscar: this.seeSearch, viajes: this.viajes });
+		// if (this.seeSearch) {
+		// 	this.seeSearch = false;
+		// } else {
+		// 	this.seeSearch = true;
+		// }
 	}
 
 	// muestra la barra de herramientas
