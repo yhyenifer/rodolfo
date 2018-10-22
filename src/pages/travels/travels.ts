@@ -1,11 +1,13 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, ModalOptions } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { Pipe, PipeTransform } from '@angular/core';
 import { TabsPage } from '../../pages/tabs/tabs';
 import { NewTravelPage } from '../new-travel/new-travel';
 import { DetailTravelPage } from '../detail-travel/detail-travel';
 import { AlltravelPage } from '../alltravel/alltravel';
+import { ComentarioContenidoPage } from '../comentario-contenido/comentario-contenido';
+import { EtiquetadosPage } from '../etiquetados/etiquetados';
 /**
  * Generated class for the TravelsPage page.
  *
@@ -45,7 +47,8 @@ export class TravelsPage {
 	constructor(
 		public navCtrl: NavController,
 		public navParams: NavParams,
-		private translateService: TranslateService
+		private translateService: TranslateService,
+		public modalCtrl: ModalController
 	) {
 		this.seeSearch = false;
 		this.noClick = false;
@@ -55,13 +58,13 @@ export class TravelsPage {
 		this.viajes = [
 			{
 				id: 1,
-				nombre: 'Mi primer viaje',
+				nombre: 'Viajando en familia',
 				ubicacion: 'Japon',
 				usuario: 'Jorge',
 				imagen: 'assets/imgs/misviajes/otrosviajes1.jpeg',
 				state: '0',
 				seguir: '0',
-				avatar: 'assets/imgs/avatar/1.png',
+				avatar: 'assets/imgs/avatar/5.jpg',
 				fecha: '2018-10-01',
 				fechaFinViaje: '2018-10-12',
 				seeTools: false
@@ -69,12 +72,12 @@ export class TravelsPage {
 			{
 				id: 2,
 				nombre: 'viajando',
-				ubicacion: 'Perú',
-				usuario: 'Jean',
-				imagen: 'assets/imgs/misviajes/otrosviajes1.jpeg',
+				ubicacion: 'Colombia',
+				usuario: 'Vivi',
+				imagen: 'assets/imgs/misviajes/otrosviajes4.jpeg',
 				state: '1',
 				seguir: '1',
-				avatar: 'assets/imgs/avatar/2.jpg',
+				avatar: 'assets/imgs/avatar/6.jpg',
 				fecha: '2018-10-01',
 				fechaFinViaje: '',
 				seeTools: false
@@ -83,7 +86,7 @@ export class TravelsPage {
 				id: 3,
 				nombre: 'contigo',
 				ubicacion: 'Colombia',
-				usuario: 'Vane',
+				usuario: 'Gio',
 				imagen: 'assets/imgs/misviajes/otrosviajes2.jpeg',
 				state: '1',
 				seguir: '0',
@@ -96,7 +99,7 @@ export class TravelsPage {
 				id: 4,
 				nombre: 'De rumbo a casa',
 				ubicacion: 'Africa',
-				usuario: 'Gio',
+				usuario: 'Vane',
 				imagen: 'assets/imgs/misviajes/otrosviajes3.jpeg',
 				state: '0',
 				seguir: '0',
@@ -156,8 +159,10 @@ export class TravelsPage {
 				}, 500);
 			} else {
 				// en caso que no este abierta las herramientas, abre la pantalla de detalle del viaje
+				// identificador, determina por donde se abre el detalle del viaje, 0 otros viajes 1, mis viajes
 				this.navCtrl.push(DetailTravelPage, {
-					viaje: viaje
+					viaje: viaje,
+					identificador: 0
 				});
 			}
 		}
@@ -174,5 +179,41 @@ export class TravelsPage {
 
 	dejarDeSeguir(viaje) {
 		viaje.seguir = '0';
+	}
+
+	// abre la modal que permite ver y agraegar comentario de un cotenido
+	comentarioContenido(viaje) {
+		this.presentComentarioContenidoModal(viaje);
+	}
+	// crea la modal de ver y agregar comentario de un cotenido
+	presentComentarioContenidoModal(viaje) {
+		const myModalOptions: ModalOptions = {
+			enableBackdropDismiss: true,
+			cssClass: 'modalcomentario'
+		};
+		let profileModal = this.modalCtrl.create(
+			ComentarioContenidoPage,
+			{ contenido: viaje },
+			myModalOptions
+		);
+		profileModal.present();
+	}
+
+	// abre la modal que permite ver y agraegar etiquetados
+	etiquetados(viaje) {
+		this.presentEtiquetadosModal(viaje);
+	}
+	// crea la modal de ver y agregar etiquetados
+	presentEtiquetadosModal(viaje) {
+		const myModalOptions: ModalOptions = {
+			enableBackdropDismiss: true,
+			cssClass: 'modaletiquetados'
+		};
+		let profileModal = this.modalCtrl.create(
+			EtiquetadosPage,
+			{ contenido: viaje },
+			myModalOptions
+		);
+		profileModal.present();
 	}
 }

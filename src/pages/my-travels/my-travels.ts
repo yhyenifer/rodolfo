@@ -111,7 +111,8 @@ export class MyTravelsPage {
 			} else {
 				// en caso que no este abierta las herramientas, abre la pantalla de detalle del viaje
 				this.navCtrl.push(DetailTravelPage, {
-					viaje: viaje
+					viaje: viaje,
+					identificador: 1
 				});
 			}
 		}

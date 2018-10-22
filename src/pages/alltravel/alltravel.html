@@ -21,16 +21,47 @@
                    mode="md"
                    class="animated fadeInDown"
                    [hidden]="!seeSearch"
-                   placeholder="{{'BUSCAR' | translate }}"></ion-searchbar>
+                   placeholder="{{'BUSCAR' | translate }}"
+                   (ionInput)="filterItems($event)"></ion-searchbar>
 
-    <ion-row>
-        <ion-col col-4
-                 class=""
-                 *ngFor="let viaje of viajes">
-            <ion-card class="">
-                <img class="img-carta"
-                     [src]="viaje.imagen" />
-            </ion-card>
-        </ion-col>
-    </ion-row>
+
+
+    <div class="images">
+        <div class="one-image"
+             *ngFor="let viaje of viajes">
+            <div class="relativo">
+                <img class="config-img"
+                     [src]="viaje.imagen"
+                     (click)="seleccionViaje(viaje)" />
+                <!-- barra de herramientas por carta-->
+                <ion-col class="degrade ">
+                    <!-- boton de los pies para seguir -->
+                    <ion-row>
+                        <button class="btn_fondo flotarizrq"
+                                *ngIf="viaje.seguir== 0"
+                                (click)="seguir(viaje)">
+                            <ion-icon class="taman"
+                                      name="gl-seguir"></ion-icon>
+
+                        </button>
+                        <!-- boton de los corazon para los que ya estoy siguiendo -->
+                        <button class="btn_fondo flotarizrq"
+                                *ngIf="viaje.seguir== 1"
+                                (click)="dejarDeSeguir(viaje)">
+                            <ion-icon class="font_rosa taman"
+                                      name="gl-siguiendo"></ion-icon>
+
+                        </button>
+                    </ion-row>
+                </ion-col>
+                <div class="titulo-pie">
+                    <p class=" posicion-titulo center font_white">{{viaje.usuario}}</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
 </ion-content>

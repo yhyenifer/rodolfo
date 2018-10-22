@@ -38,6 +38,18 @@
     color: rgb(34, 118, 175);
 }
 
+.toolbar-content-ios {
+    margin-top: 12px;
+}
+
+.botones-titulos {
+    margin-top: 10px;
+}
+
+.bar-button-default-ios {
+    margin-top: 12px;
+}
+
 // iconos propios de la aplicacion
 ion-icon {
     &[class*="gl-"] {

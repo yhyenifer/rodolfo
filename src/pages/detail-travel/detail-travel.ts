@@ -14,6 +14,7 @@ import { ContenidoPage } from '../contenido/contenido';
 import { FinalizarViajePage } from '../finalizar-viaje/finalizar-viaje';
 import { ComentarioContenidoPage } from '../comentario-contenido/comentario-contenido';
 import { EtiquetadosPage } from '../etiquetados/etiquetados';
+import { TravelsPage } from '../travels/travels';
 
 /**
  * Generated class for the DetailTravelPage page.
@@ -28,6 +29,7 @@ import { EtiquetadosPage } from '../etiquetados/etiquetados';
 	templateUrl: 'detail-travel.html'
 })
 export class DetailTravelPage {
+	idx: any;
 	contenido: {
 		id: number;
 		viaje: number;
@@ -54,9 +56,14 @@ export class DetailTravelPage {
 		public navParams: NavParams,
 		public modalCtrl: ModalController
 	) {
+		// permite el control de la accion "dejar presionada la carta"
 		this.noClick = false;
+		// oculta por defecto la barra de busqueda
 		this.seeSearch = false;
+		// recibe todos los datos del viaje
 		this.viaje = this.navParams.get('viaje');
+		// identificador, determina por donde se abre el detalle del viaje, 0 otros viajes 1, mis viajes
+		this.idx = this.navParams.get('identificador');
 		this.nombreViaje = this.viaje.nombre;
 		this.contenido = [];
 		if (this.viaje.id == '1') {
@@ -173,9 +180,18 @@ export class DetailTravelPage {
 
 	ionViewDidLoad() {
 		// evento del boton atras de la pagina, esta lo lleva directamente a mis viajes
-		this.navBar.backButtonClick = (e: UIEvent) => {
-			this.navCtrl.setRoot(MyTravelsPage, { nuevoViaje: this.viaje });
-		};
+		if (this.idx == 0) {
+			// otros viajes
+			this.navBar.backButtonClick = (e: UIEvent) => {
+				this.navCtrl.setRoot(TravelsPage, { nuevoViaje: this.viaje });
+			};
+		}
+		if (this.idx == 1) {
+			// mis viajes
+			this.navBar.backButtonClick = (e: UIEvent) => {
+				this.navCtrl.setRoot(MyTravelsPage, { nuevoViaje: this.viaje });
+			};
+		}
 	}
 	presionado(contenido) {
 		this.efectoTool = 'fadeInLeft';

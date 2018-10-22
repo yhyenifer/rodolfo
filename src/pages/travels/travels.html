@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-    <ion-navbar>
+    <ion-navbar mod="md">
         <ion-row>
 
             <ion-col col-8>
@@ -34,7 +34,8 @@
               class="fondoOpaco">
 
         <div class="relativo">
-            <img [src]="viaje.imagen"
+            <img class="max-taman"
+                 [src]="viaje.imagen"
                  (click)="seleccionViaje(viaje)" />
             <!-- barra de herramientas por carta-->
             <ion-col class="degrade ">
@@ -56,7 +57,7 @@
                     </button>
 
                     <ion-avatar class="tamaño-avatar">
-                        <img class="avatar-borde"
+                        <img class="avatar-borde avatar-tope"
                              [src]="viaje.avatar">
                     </ion-avatar>
 
@@ -85,40 +86,14 @@
         </div>
 
 
-        <ion-card-header class=" btn_fondo animated  "
-                         [ngClass]="efecto"
-                         *ngIf="viaje.seeTools">
-            <ion-col>
-                <button class="btn_fondo paddin_aling"
-                        (click)="showSearch()">
-                    <ion-icon name="gl-btn-editar"></ion-icon>
-                </button>
-                <button class="btn_fondo paddin_aling"
-                        (click)="showSearch()">
-                    <ion-icon name="gl-btn-comentarios"></ion-icon>
-                </button>
-                <button class="btn_fondo paddin_aling">
-                    <ion-icon name="gl-btn-etiquetados"></ion-icon>
-                </button>
-                <button class="btn_fondo paddin_aling"
-                        (click)="showSearch()">
-                    <ion-icon name="gl-btn-finalizar"></ion-icon>
-                </button>
-                <button class="btn_fondo paddin_aling"
-                        (click)="showSearch()">
-                    <ion-icon name="gl-btn-compartir"></ion-icon>
-                </button>
-
-            </ion-col>
-
-
-        </ion-card-header>
 
         <ion-card-content class="fondTitleCard">
             <div class="flotarder">
                 <ion-icon class="icon-blanco   posicion-derecha-icon"
+                          (click)="comentarioContenido(viaje)"
                           name="gl-btn-comentarios"></ion-icon>
                 <ion-icon class="icon-blanco   posicion-derecha-icon"
+                          (click)="etiquetados(viaje)"
                           name="gl-btn-etiquetados"></ion-icon>
 
             </div>
